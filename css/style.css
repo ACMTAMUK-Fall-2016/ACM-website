@@ -9,9 +9,18 @@
     text-decoration: none;
     display: inline-block;
 }
+img {
+  vertical-align: middle;
+  display: table-cell;
+}
+span {
+  vertical-align: middle;
+  display: table-cell;
+}
 a{
 	text-decoration:none;
 	color:white;
+	text-align:center;
 }
 a:visited{
 color:white;
@@ -101,6 +110,7 @@ text-decoration: none;
    	min-height:100%;
    	height:auto;
     position: relative;
+    float: right;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 td:hover, td:active {
@@ -231,9 +241,7 @@ left: -150px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat:no-repeat;
-
-     
+    background-repeat:no-repeat;    
 }
 #slide3 img:first-child{
     position:absolute;
