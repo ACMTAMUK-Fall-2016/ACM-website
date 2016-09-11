@@ -12,6 +12,8 @@
 img {
   vertical-align: middle;
   display: table-cell;
+  padding-left:3px;
+  margin-right:2px;
 }
 span {
   vertical-align: middle;
@@ -22,11 +24,6 @@ a{
 	color:white;
 	text-align:center;
 }
-a:visited{
-color:white;
-text-decoration: underline;
-}
-
 h4{
 	font-size:xx-large;
 }
@@ -51,14 +48,12 @@ h4{
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-
     }
 #search_bar:link, #search_bar:visited {
     text-align: center;	
     text-decoration: none;
     display: inline-block;
 }
-
 #search_bar{
 	z-index:9999999;
    position: fixed; 
@@ -83,8 +78,7 @@ h4{
     text-color:black;
     background-color: #5b6fe0;
     right: 0px;
-}
-  
+} 
 #search_bar_hidden{
     z-index:9999999;
     bottom:42px;
@@ -94,15 +88,20 @@ h4{
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-}
-
 a:link{
+min-width:100px;
 color:#ffffff;
 text-decoration: none;
 }
-
 #side{
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+div{
+	background-color:#3d4a96;
+}
+div:hover{
+	color:black;
+	background-color:#5b6fe0;
 }
 .slide {
     background-attachment: fixed;
@@ -112,18 +111,6 @@ text-decoration: none;
     position: relative;
     float: right;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
-}
-td:hover, td:active {
-    background-color: #5b6fe0;
-
-}
-
-td:link, td:visited {
-    background-color: #f44336;
-    color: white;
-    text-align: center;	
-    text-decoration: none;
-    display: inline-block;
 }
 .auto-style1 {
 	background-attachment: fixed;
@@ -151,7 +138,7 @@ td:link, td:visited {
 }
 .button{
     display:block;
-    width:50px;
+    width:20px;
     height:50px;
     position:absolute;
     bottom:0px;
@@ -159,15 +146,11 @@ td:link, td:visited {
     background-image:url(../images/button4.png);
     background-repeat:repeat-x;
 }
-.button:hover{
-    background-color: #5b6fe0;
-    cursor:pointer;
-}
 .main_body{
 	width:80%;
 	height:100%;
 	float: right;
-	background-color:#000000;
+	background-color:#5b6fe0;
 	text-align:center;
 }
 /******************************
