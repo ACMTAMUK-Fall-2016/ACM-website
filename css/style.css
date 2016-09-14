@@ -48,6 +48,11 @@ div{
 	height:10%;
 	width:100%;
 }
+#FU:hover{
+	color:white;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+	background-color:#3d4a96;
+}
 h4{
 	font-size:xx-large;
 }
@@ -295,7 +300,7 @@ left: -150px;
  SLIDE 4 
 *******************************/
 #slide4{
-    background-image:url('/images/Technology 4.png');
+    background-image:url('../images/Technology 4.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
