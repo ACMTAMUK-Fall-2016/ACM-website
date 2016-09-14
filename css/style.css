@@ -151,6 +151,15 @@ img {
     font-weight:bold;
     color:rgba(255,255,255,0.3);
 }
+#side-bar{
+	float:left;
+	min-width:140px; 
+	width:20.1%; 
+	height:100.0%;
+	position:fixed; 
+	left: 0px; 
+	top: 0px;
+}
 span {
   vertical-align: middle;
   display: table-cell;
@@ -286,7 +295,7 @@ left: -150px;
  SLIDE 4 
 *******************************/
 #slide4{
-    background-image:url('../images/Technology 4.png');
+    background-image:url('/images/Technology 4.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
