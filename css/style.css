@@ -164,6 +164,8 @@ img {
 	position:fixed; 
 	left: 0px; 
 	top: 0px;
+	border:medium;
+	border-color:white;
 }
 span {
   vertical-align: middle;
