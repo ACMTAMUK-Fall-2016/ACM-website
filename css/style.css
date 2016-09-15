@@ -41,17 +41,20 @@ div{
     background-repeat:no-repeat; 
 }
 #FU{
+	color:#3d4a96;
+	background-color:white;
 	padding-left:20px;
 	font-size:1.5em;
 	cursor:default;
 	display:table-cell;
 	height:10%;
 	width:100%;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
 }
 #FU:hover{
-	color:white;
+	color:#3d4a96;
+	background-color:white;
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
-	background-color:#3d4a96;
 }
 h4{
 	font-size:xx-large;
@@ -128,6 +131,14 @@ img {
     background-color: #5b6fe0;
     right: 0px;
 } 
+#search_bar_icon{
+	cursor:pointer;
+	height:19px;
+	width:19px;
+	font-size:small;
+	margin-bottom:1px;
+	background-image:url('../images/mag.png') 
+}
 #search_bar_hidden{
     z-index:9999999;
     bottom:42px;
