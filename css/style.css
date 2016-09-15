@@ -41,6 +41,7 @@ div{
     background-repeat:no-repeat; 
 }
 #FU{
+	padding-left:20px;
 	font-size:1.5em;
 	cursor:default;
 	display:table-cell;
