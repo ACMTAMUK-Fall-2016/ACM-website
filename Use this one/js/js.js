@@ -7,7 +7,7 @@
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
-    button = $('.button');
+    button = $('.downArrow');
     buttons = $('.buttons');
     mywindow = $(window);
     htmlbody = $('html,body');
