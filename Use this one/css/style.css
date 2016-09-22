@@ -59,6 +59,7 @@ div{
 h4{
 	font-size:xx-large;
 }
+
 html,body{    
     font-family: sans-serif;    
     width:100%;     
@@ -85,6 +86,7 @@ img {
 }
 .learn_more{
 	z-index:9999999;
+	text-shadow:none;
    position: fixed; 
    border-top-left-radius:10px;
    border-bottom-left-radius:10px;
@@ -150,6 +152,8 @@ img {
 }
 .slide {
     background-attachment: fixed;
+   color:white;
+text-shadow: 1px 1px #000000;
     width:100%;
    	min-height:100%;
    	height:auto;
@@ -413,6 +417,7 @@ left: -150px;
     top:100px;
     right:300px;
 }
+
 @media screen and (max-width:900px){
 	
 	.nav_words{
@@ -425,6 +430,15 @@ left: -150px;
     text-align:left;
 	font-size:small;
 	display:block;
+}
+#FU{
+	background-image:url('../images/FU.png');
+	background-size: 43px;
+        background-repeat: no-repeat;
+
+}
+#FU b{
+	visibility:collapse;
 }
 
 }
