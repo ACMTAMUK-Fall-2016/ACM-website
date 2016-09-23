@@ -9,6 +9,7 @@
     slide = $('.slide');
     button = $('.downArrow');
     buttons = $('.buttons');
+    buttony = $('.buttony');
     mywindow = $(window);
     htmlbody = $('html,body');
  
@@ -66,6 +67,12 @@
  
     });
      buttons.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+ 
+    });
+    buttony.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
