@@ -9,23 +9,12 @@ a:hover{
 }
 
 a:link{
-<<<<<<< HEAD
-    min-width:100px;
     color:#ffffff;
     text-decoration: none;
 }
 #acmLogo{
 	height:90px;
 	width:90px;
-||||||| merged common ancestors
-min-width:100px;
-color:#ffffff;
-text-decoration: none;
-=======
-
-color:#ffffff;
-text-decoration: none;
->>>>>>> ec8de2fd653b32da07e8c10a879414c6cde6388c
 }
 .auto-style1 {
 	background-attachment: fixed;
@@ -84,16 +73,11 @@ div{
 h4{
 	font-size:xx-large;
 }
-<<<<<<< HEAD
 #homeLogos{
 	display:inline-block;
 	background:transparent;
 	
 }
-||||||| merged common ancestors
-=======
-
->>>>>>> ec8de2fd653b32da07e8c10a879414c6cde6388c
 html,body{    
     font-family: sans-serif;    
     width:100%;     
@@ -120,39 +104,6 @@ img {
 }
 .learn_more{
 	z-index:9999999;
-<<<<<<< HEAD
-    position: fixed; 
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-    right:-40px; 
-    padding-left:4px;
-    bottom:65px;
-    font-size:large;
-    border: 3px #3d4a96 solid;
-    display:flex;
-    background:#ffffff;
-    border-right:none;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-||||||| merged common ancestors
-   position: fixed; 
-   border-top-left-radius:10px;
-   border-bottom-left-radius:10px;
-   right:-40px; 
-   padding-left:4px;
-   bottom:65px;
-   font-size:large;
-   border: 3px #3d4a96 solid;
-   display:flex;
-   background:#ffffff;
-   border-right:none;
-      -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-=======
 	text-shadow:none;
    position: absolute; 
    border-top-left-radius:10px;
@@ -169,7 +120,6 @@ img {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
->>>>>>> ec8de2fd653b32da07e8c10a879414c6cde6388c
     }
 #search_bar:link, #search_bar:visited {
     text-align: center;	
