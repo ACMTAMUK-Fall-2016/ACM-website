@@ -83,14 +83,4 @@
  
 });
 
-function screenHeight() {
-    var x = screen.height;
-    document.getElementById("popout1").style.top = x*(1/12)+"px";
-document.getElementById("popout2").style.top = x*(1/6)+"px";
-document.getElementById("popout3").style.top = x*(1/4)+"px";
-document.getElementById("popout4").style.top = x*(1/3)+"px";
-document.getElementById("popout5").style.top = x*(5/12)+"px";
-}
-
-
 
