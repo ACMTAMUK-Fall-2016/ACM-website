@@ -82,27 +82,15 @@
  
  
 });
-function bgChange(bg) {
-	if((parseInt(bg)%2)!==0){
-	 nbg=(parseInt(bg)+1);
-     document.getElementById(bg).style.background = "#5b6fe0";
-     document.getElementById(nbg).style.background = "#5b6fe0";
-     }else{
-     nbg=(parseInt(bg)-1);
-     document.getElementById(bg).style.background = "#5b6fe0";
-     document.getElementById(nbg).style.background = "#5b6fe0";
-     }
+
+function screenHeight() {
+    var x = screen.height;
+    document.getElementById("popout1").style.top = x*(1/12)+"px";
+document.getElementById("popout2").style.top = x*(1/6)+"px";
+document.getElementById("popout3").style.top = x*(1/4)+"px";
+document.getElementById("popout4").style.top = x*(1/3)+"px";
+document.getElementById("popout5").style.top = x*(5/12)+"px";
 }
-function bgChange2(bg) {
-     if((parseInt(bg)%2)!==0){
-	 nbg=(parseInt(bg)+1);
-     document.getElementById(nbg).style.background = "#3d4a96";
-     document.getElementById(bg).style.background = "#3d4a96";
-     }else{
-     nbg=(parseInt(bg)-1);
-     document.getElementById(nbg).style.background = "#3d4a96";
-     document.getElementById(bg).style.background = "#3d4a96";
-     }
-}
+
 
 
