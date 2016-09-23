@@ -218,7 +218,7 @@ span {
 text-shadow:1px 1px #000000;
 	color:#ffffff;
 	position:fixed;
-	
+	margin-top:10px;
 	left:0px;
 	visibility:hidden;
 	z-index:-1;
@@ -245,7 +245,7 @@ visibility:visible;
 text-shadow:1px 1px #000000;
 	color:#ffffff;
 	position:fixed;
-	
+	margin-top:10px;
 	left:0px;
 	visibility:hidden;
 	z-index:-1;
@@ -272,7 +272,7 @@ visibility:visible;
 text-shadow:1px 1px #000000;
 	color:#ffffff;
 	position:fixed;
-	
+	margin-top:10px;
 	left:0px;
 	visibility:hidden;
 	z-index:-1;
@@ -299,7 +299,7 @@ visibility:visible;
 text-shadow:1px 1px #000000;
 	color:#ffffff;
 	position:fixed;
-	
+	margin-top:10px;
 	left:0px;
 	visibility:hidden;
 	z-index:-1;
@@ -326,7 +326,7 @@ visibility:visible;
 text-shadow:1px 1px #000000;
 	color:#ffffff;
 	position:fixed;
-	
+	margin-top:10px;
 	left:0px;
 	visibility:hidden;
 	z-index:-1;
