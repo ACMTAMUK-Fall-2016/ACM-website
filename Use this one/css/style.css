@@ -101,6 +101,9 @@ img {
 	width:40px;
 	padding-top:10px;
 }
+.info{
+	padding:0px 80px 0px 80px;
+}
 .learn_more:link, .learn_more:visited {
     text-align: center;	
     text-decoration: none;
