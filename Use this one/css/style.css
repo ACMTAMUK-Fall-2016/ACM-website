@@ -50,9 +50,10 @@ div{
     background-repeat:no-repeat; 
 }
 #FU{
+	
 	color:#3d4a96;
 	background-color:white;
-	padding-left:20px;
+	padding-left:40px;
 	font-size:1.5em;
 	cursor:default;
 	display:table-cell;
