@@ -33,7 +33,6 @@ a:link{
 }
 .buttony{
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
-	
 	height:10%;
 	display:table;
 }
@@ -66,6 +65,13 @@ div{
 	background-color:white;
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
 }
+#FUsmall{
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+	height:50px;
+	width:42px;
+	padding-top:10px;
+	background-color:#ffffff;
+}
 h4{
 	font-size:xx-large;
 }
@@ -88,6 +94,11 @@ img {
     width:38px;
     left:36px;
     float:left;
+}
+.imgButton{
+	height:40px;
+	width:40px;
+	padding-top:10px;
 }
 .learn_more:link, .learn_more:visited {
     text-align: center;	
