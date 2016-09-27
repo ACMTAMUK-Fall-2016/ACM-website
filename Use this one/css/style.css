@@ -9,9 +9,12 @@ a:hover{
 }
 
 a:link{
-
-color:#ffffff;
-text-decoration: none;
+    color:#ffffff;
+    text-decoration: none;
+}
+#acmLogo{
+	height:90px;
+	width:90px;
 }
 .auto-style1 {
 	background-attachment: fixed;
@@ -30,7 +33,6 @@ text-decoration: none;
 }
 .buttony{
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
-	
 	height:10%;
 	display:table;
 }
@@ -48,9 +50,10 @@ div{
     background-repeat:no-repeat; 
 }
 #FU{
+	
 	color:#3d4a96;
 	background-color:white;
-	padding-left:20px;
+	padding-left:40px;
 	font-size:1.5em;
 	cursor:default;
 	display:table-cell;
@@ -63,24 +66,43 @@ div{
 	background-color:white;
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
 }
+#FUsmall{
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+	height:50px;
+	width:42px;
+	padding-top:10px;
+	background-color:#ffffff;
+}
 h4{
 	font-size:xx-large;
 }
-
+#homeLogos{
+	display:inline-block;
+	background:transparent;
+	
+}
 html,body{    
     font-family: sans-serif;    
     width:100%;     
     height:100%;  
 }
 img {
-  vertical-align: middle;
-  display: table-cell;
-  padding-left:3px;
-  margin-right:2px;
-  height:42px;
-  width:38px;
-  left:36px;
-  float:left;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left:3px;
+    margin-right:2px;
+    height:42px;
+    width:38px;
+    left:36px;
+    float:left;
+}
+.imgButton{
+	height:40px;
+	width:40px;
+	padding-top:10px;
+}
+.info{
+	padding:0px 80px 0px 80px;
 }
 .learn_more:link, .learn_more:visited {
     text-align: center;	
@@ -117,23 +139,23 @@ img {
 }
 #search_bar{
 	z-index:9999999;
-   position: fixed; 
-   border-top-left-radius:10px;
-   border-bottom-left-radius:10px;
-   right:-270px; 
-   padding-left:4px;
-   bottom:42px;
-   min-width:92.05px;
-   width:362.05px;
-   font-size:large;
-   border: 3px #3d4a96 solid;
-   display:flex;
-   background:#ffffff;
-   border-right:none;
+    position: fixed; 
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    right:-270px; 
+    padding-left:4px;
+    bottom:42px;
+    min-width:92.05px;
+    width:362.05px;
+    font-size:large;
+    border: 3px #3d4a96 solid;
+    display:flex;
+    background:#ffffff;
+    border-right:none;
     -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     }
 #search_bar:hover, #search_bar:active {
     text-color:black;
@@ -152,10 +174,10 @@ img {
     z-index:9999999;
     bottom:42px;
 	left: -25px;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 .slide {
     background-attachment: fixed;
@@ -169,7 +191,8 @@ text-shadow: 1px 1px #000000;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
     left: 0px; 
     top: 0px;
-}
+ 
+    }
 .slideno {
     position:absolute;
     bottom:0px;
@@ -189,9 +212,13 @@ text-shadow: 1px 1px #000000;
 	
 }
 span {
-  vertical-align: middle;
-  display: table-cell;
-  padding-right:40px;
+    vertical-align: middle;
+    display: table-cell;
+    padding-right:40px;
+}
+#TowerLogo{
+	height:150px;
+	width:250px;	
 }
 .main_body{
 	width:80%;
@@ -358,7 +385,7 @@ visibility:visible;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
-   background-repeat:no-repeat;
+    background-repeat:no-repeat;
 }
 /******************************
  SLIDE 2 
@@ -373,8 +400,8 @@ visibility:visible;
 }
 #slide2 img:first-child{
     position:absolute;
-top: 700px;
-left: -150px;
+    top: 700px;
+    left: -150px;
 }
 #slide2 img:nth-child(2){
     position:absolute;
@@ -424,8 +451,8 @@ left: -150px;
 }
 #slide3 img:first-child{
     position:absolute;
-top: 700px;
-left: -150px;
+    top: 700px;
+    left: -150px;
 }
 #slide3 img:nth-child(2){
     position:absolute;
@@ -477,8 +504,8 @@ left: -150px;
 }
 #slide4 img:first-child{
     position:absolute;
-top: 700px;
-left: -150px;
+    top: 700px;
+    left: -150px;
 }
 #slide4 img:nth-child(2){
     position:absolute;
@@ -529,8 +556,8 @@ left: -150px;
 }
 #slide5 img:first-child{
     position:absolute;
-top: 700px;
-left: -150px;
+    top: 700px;
+    left: -150px;
 }
 #slide5 img:nth-child(2){
     position:absolute;
