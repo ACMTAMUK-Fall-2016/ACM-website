@@ -91,11 +91,16 @@ img {
     display: table-cell;
     padding-left:3px;
     margin-right:2px;
-    height:42px;
+    
     width:38px;
     left:36px;
     float:left;
 }
+.imag{
+	height:90%;
+	padding-left:0px;
+}
+
 .imgButton{
 	height:40px;
 	width:40px;
