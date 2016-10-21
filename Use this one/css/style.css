@@ -15,6 +15,7 @@ a:link{
 #acmLogo{
 	height:90px;
 	width:90px;
+	margin-left:30%;
 }
 .auto-style1 {
 	background-attachment: fixed;
@@ -79,6 +80,7 @@ h4{
 #homeLogos{
 	display:inline-block;
 	background:transparent;
+	align:center;
 	
 }
 html,body{    
