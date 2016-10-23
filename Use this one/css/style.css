@@ -637,5 +637,8 @@ visibility:visible;
 	display:block;
 	
 }
+#side-bar{
+	display:none;
+}
 
 }
