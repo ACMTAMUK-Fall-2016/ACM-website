@@ -471,7 +471,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 
 .csslider1 > .cs_arrowprev:hover > label,
 .csslider1 > .cs_arrownext:hover > label {
-  background-color: #9ea5cb;
+  background-color: #ffffff;
 }
 
 .csslider1 > .cs_arrownext:hover > label span {
@@ -586,7 +586,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_play_pause > label span:after {
 }
 
 .csslider1 > .cs_play_pause:hover > label {
-  background-color: #9ea5cb;
+  background-color: #ffffff;
 }
 .csslider1 > .cs_play_pause:hover > label span {
   color: #000;
@@ -789,7 +789,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_play_pause > label span:after {
     950ms visibility 600ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 .csslider1 > .cs_description > label > .cs_descr {
-  background-color: #9ea5cb;
+  background-color: #ffffff;
   text-align: left;
   font-size: 0.8em;
   margin: -5px 20px;

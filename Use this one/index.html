@@ -16,48 +16,16 @@
 </head>
 
 <body>
-<!--Beginning of Side Bar-->
- <div id="side-bar">
-<!--Home-->
- <a href="#" class="buttons" data-slide="1" title="">   
- <span><img src="images/house.png" alt=""/></span><span>Home</span>
- </a>
-<!--About-->
- <a href="#" class="buttons" data-slide="2" title="">
- <span><img src="images/About.png" alt=""/></span><span>About</span>
- </a>
-<!--Members-->
- <a href="#" class="buttons" data-slide="3" title="">
- <span><img src="images/Members.png" alt=""/></span><span>Members</span>
- </a>
-<!--Projects-->
- <a href="#" class="buttons" data-slide="4" title=""> 
- <span><img src="images/Projects.png" alt=""/></span><span>Projects</span>
- </a> 
-<!--Join Now-->
-  <a href="#" class="buttons" data-slide="5" title=""> 
-  <span><img src="images/JoinNow.png" alt=""/></span><span>Join Now</span>
-  </a> 
-<!--Follow Us-->
-  <a class="buttons" title=""><span id="FU"data-slide="6" title="">
-  <b>Follow Us</b></span></a>
-<!--Google Plus-->
-  <a href="#" class="buttons" data-slide="7" title=""> 
-  <span><img src="images/GooglePlus.png" alt=""/></span><span>Google Plus</span>
-  </a> 
-<!--Twitter-->
-  <a href="#" class="buttons" data-slide="8" title=""> 
-  <span><img src="images/Twitter.png" alt=""/></span><span>Twitter</span>
-  </a>
-<!--Facebook-->
-  <a href="#" class="buttons" data-slide="9" title="">
-  <span><img src="images/facebook.png" alt=""/></span><span>Facebook</span>
-  </a>
-<!--Youtube-->
-  <a href="#" class="buttons" data-slide="10" title=""> 
-  <span><img src="images/Youtube.png" alt=""/></span><span>Youtube</span>
-  </a>
-  </div>
+<!-- Facebook plugin javascript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!--Search Bar
  <div id="search_bar" >
@@ -90,7 +58,7 @@ Main Body-->
 		<link rel="stylesheet" href="cssslider_files/csss_engine1/style.css">
 		<!--[if IE]><link rel="stylesheet" href="cssslider_files/csss_engine1/ie.css"><![endif]-->
 		<!--[if lte IE 9]><script type="text/javascript" src="cssslider_files/csss_engine1/ie.js"></script><![endif]-->
-		 <div class='csslider1 autoplay '>
+		 <div class='csslider1 autoplay ' style="z-index:0;">
 		<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
 		<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
 		<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
@@ -127,12 +95,10 @@ Main Body-->
 		
 
   <div class="learn_more">
-  
-
- <br/>
- <a href="http://www.tamuk.edu/"> <span style="color:#3d4a96;">Learn More</span></a>
- <br/>
- </div> 
+   <br/>
+    <a href="http://www.tamuk.edu/" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
+   <br/>
+  </div> 
  <a class="downArrow" data-slide="2" title=""></a>      
  </div>
  
@@ -159,7 +125,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 </p>   
 <div class="learn_more">
  <br/>
- <a href="http://www.acm.org/"> <span style="color:#3d4a96;">Learn More</span></a>
+ <a href="http://www.acm.org/" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
  <br/>
  </div>   
  <a class="downArrow" data-slide="3" title=""></a>      
@@ -199,17 +165,72 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
  </p>
  <br/>
  <p class="info">
- The 'Learn More' tab at the bottom right corner links to the ACM membership page
+ The 'Learn More' tab at the upper right corner will take you to the ACM membership page
  where you can find additional sign up information and forms.
  </p>
  <br /><br /><br /><br /><br /><br /><br />
 <div class="learn_more">
  <br/>
- <a href="http://www.acm.org/membership/join-acm"> <span style="color:#3d4a96;">Learn More</span></a>
+ <a href="http://www.acm.org/membership/join-acm" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
  <br/>
  </div> 
 <!--Button Overlays-->
  </div>
+ <p>&copy; 2016 | Texas A &amp; M University-Kingsville Association for Computing Machinery</p>
+
+ <!--Beginning of Side Bar-->
+ <div id="side-bar">
+<!--Home-->
+ <a href="#" class="buttons" data-slide="1" title="">   
+ <span><img src="images/house.png" alt=""/></span><span>Home</span>
+ </a>
+<!--About-->
+ <a href="#" class="buttons" data-slide="2" title="">
+ <span><img src="images/About.png" alt=""/></span><span>About</span>
+ </a>
+<!--Members-->
+ <a href="#" class="buttons" data-slide="3" title="">
+ <span><img src="images/Members.png" alt=""/></span><span>Members</span>
+ </a>
+<!--Projects-->
+ <a href="#" class="buttons" data-slide="4" title=""> 
+ <span><img src="images/Projects.png" alt=""/></span><span>Projects</span>
+ </a> 
+<!--Join Now-->
+  <a href="#" class="buttons" data-slide="5" title=""> 
+  <span><img src="images/JoinNow.png" alt=""/></span><span>Join Now</span>
+  </a> 
+<!--Follow Us-->
+  <a class="buttons" title=""><span id="FU"data-slide="6" title="">
+  <b>Follow Us</b></span></a>
+<!--Google Plus-->
+  <a href="#" class="buttons" data-slide="7" title=""> 
+  <span><img src="images/GooglePlus.png" alt=""/></span><span>Google Plus</span></a> 
+<!--Twitter-->
+<div id="twitterFeed" style="width:100%;">
+  <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:100%" data-slide="8" title=""> 
+  <span><img src="images/Twitter.png" alt=""/></span><span>Twitter</span>
+  </a> <div class="twitter-timeline">
+  <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
+ 
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8" ></script>
+  </div>
+  </div>
+<!--Facebook-->
+<div id="facebookFeed" style="width:100%;">
+  <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:100%" class="buttons" data-slide="9" title="">
+  <span><img src="images/facebook.png" alt=""/></span><span>Facebook</span>
+  </a>
+  <div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+  <blockquote cite="https://www.facebook.com/acmtamuk" class="fb-xfbml-parse-ignore">
+  <a href="https://www.facebook.com/acmtamuk">TAMUK-ACM</a></blockquote>
+  </div></div>
+<!--Youtube-->
+  <a href="#" class="buttons" data-slide="10" title=""> 
+  <span><img src="images/Youtube.png" alt=""/></span><span>Youtube</span>
+  </a>
+  </div>
+
  </div>
 <div class="side_bar_overlay" >
 <a href="#" class="buttony" data-slide="1" title=""><img class="imgButton" src="images/house.png" alt=""/>
@@ -236,11 +257,29 @@ Join Now
 </a>
 <img id="FUsmall" src="images/FU.png" alt=""/>
 <a href="#" class="buttony" data-slide="6" title=""><img class="imgButton" src="images/GooglePlus.png" alt=""/></a>
-<a href="#" class="buttony" data-slide="7" title=""><img class="imgButton" src="images/Twitter.png" alt=""/></a>
-<a href="#" class="buttony" data-slide="8" title=""><img class="imgButton" src="images/facebook.png" alt=""/></a>
-<a href="#" class="buttony" data-slide="9" title=""><img class="imgButton" src="images/Youtube.png" alt=""/></a>
-</div>
+<div id="twitterFeed" style="width:100%;">
+  <a href="#" class="buttony" data-slide="7" title="" style="height:100%;" ><img class="imgButton" src="images/Twitter.png" alt=""/></a> 
+ 
+  </a> <div class="twitter-timeline">
+  <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
+ 
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8" ></script>
+  </div>
+  </div>
 
+
+<div id="facebookFeed" style="height:10%">
+<a href="#" style="height:100%" class="buttony" data-slide="8" title="" ><img class="imgButton" src="images/facebook.png" alt=""/></a>
+<div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+
+  <blockquote cite="https://www.facebook.com/acmtamuk" class="fb-xfbml-parse-ignore">
+  <a href="https://www.facebook.com/acmtamuk">TAMUK-ACM</a></blockquote>
+  </div>
+  </div>
+<a href="#" class="buttony" data-slide="9" title=""><img class="imgButton" src="images/Youtube.png" alt=""/></a>
+<p>&copy; 2016 | Texas A &amp; M University-Kingsville Association for Computing Machinery</p>
+
+</div>
  
  </body>
  </html>
