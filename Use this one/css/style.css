@@ -689,7 +689,10 @@ visibility:visible;
 #side-bar{
 	display:none;
 }
-.copyright{
+.copyright {
 	font-size:x-small;
+	text-align:center;
+	right:0px;
+	left:18%;
 }
 }
