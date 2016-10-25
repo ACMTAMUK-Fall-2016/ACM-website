@@ -666,7 +666,7 @@ visibility:visible;
 	}
 	.main_body{
 		width:95%;
-		font-size:x-small;
+		font-size:small;
 	}
 	.follow_us{
     text-align:left;
@@ -689,5 +689,7 @@ visibility:visible;
 #side-bar{
 	display:none;
 }
-
+.copyright{
+	font-size:x-small;
+}
 }
