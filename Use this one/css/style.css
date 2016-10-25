@@ -434,6 +434,12 @@ visibility:visible;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+.copyright{
+	position:fixed;
+	bottom:0px;
+	z-index:-1;
+	right:18%
+}
 /******************************
  SLIDE 1 
 *******************************/
