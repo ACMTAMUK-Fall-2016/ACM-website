@@ -15,12 +15,12 @@
 .csslider1 {
   display: inline-block;
   position: relative;
-  max-width: 640px;
-  max-height:17em;
+  width: 65%;
+  height:65%;
   
   
 
-  width: 100%;
+  
 }
 .csslider1,
 .csslider1 *,
@@ -107,7 +107,7 @@
 .csslider1 > .cs_arrowprev,
 .csslider1 > .cs_arrownext {
   position: absolute;
-  top: 50%;
+  top: 48%;
   z-index: 5;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -255,7 +255,7 @@
 /* ------------- General Play Pause ------------- */
 .csslider1 > .cs_play_pause {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   z-index: 5;
 }
