@@ -190,11 +190,11 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
  <?php
   if(isset($_SESSION['admin'])&&$_SESSION['admin']=="yes")
   {
-	  print "<a class='add_members' href='admin.php'>Add Members<a/>";
+	  print "<a class='add_members' href='admin.php'>Edit Members<a/>";
 	  
   }else
   {
-	  print '<a class="add_members" >Add Members
+	  print '<a class="add_members" >Edit Members
 			 <div class="admin_login">
 			 <form class="admin_login_form" action="admin.php" method="POST"><br />
 			 <input type="text" size="inherit" name="username" required="required" placeholder="Username" /><br /><br />

@@ -519,7 +519,33 @@ visibility:visible;
 	min-height:60%;
 	padding:2px;
 }
+.x_pic{
+	
+	background:none;
+	display:none;
+}
+.r_member{
+	height: 115px;
+    width: 10%;
+	min-width:75px;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position-x: center;
+	padding:2%;
+	margin: 20px;
+	position:inherit;
+	display:inline-flex;
+	border-width:2px;
+	border-style:solid:
+}
 
+.r_member:hover .x_pic{
+	 -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+	display:inline-block;
+}
 /******************************
  SLIDE 1 
 *******************************/

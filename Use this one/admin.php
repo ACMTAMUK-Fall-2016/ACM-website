@@ -16,10 +16,20 @@ SESSION_START();
 		$file = "images/members/member_names.txt";
 		$files = "images/members/";
 		$temp= $filecount+1 . ".jpg";
-		$_FILES["member_pic"]["name"]=$temp;
+		
+		if(isset($_FILES['member_pic']['tmp_name']))
+		{
+			$_FILES["member_pic"]["name"]=$temp;
+			move_uploaded_file($_FILES['member_pic']['tmp_name'], $files . basename($_FILES['member_pic']['name'] ));
+		}else
+		{
+			$filer="images/No_Pic.jpg";
+			$newfile = "images/members/" . $temp;
+			copy($filer, $newfile);
+			
+		}
 		$string=$filecount+1 . " - " . $new_first . " " . $new_last . " - " . $new_op_text . ",";
 		file_put_contents($file,$string, FILE_APPEND | LOCK_EX);
-		move_uploaded_file($_FILES['member_pic']['tmp_name'], $files . basename($_FILES['member_pic']['name'] ));
 		header('Location: admin.php');
 		
 	}
@@ -118,8 +128,11 @@ Main Body-->
 Optional Picture:<br />
 <input type="file" name="member_pic" id="member_pic" accept="image/*" capture="camera" style="max-width:32.5%;" ><br /><br />
 <input type="submit" name="add_member" value="Add Member" onClick="return confirm('Do you wish to add a member?')" /><br /><br />
-<input type="reset" name="reset" value="Clear Form" /><br />
+<input type="reset" name="reset" value="Clear Form" /><br /><br />
+<div style="width:25%;margin-left:37.5%">
+<a href="remove_member.php">Remove Member</a></div>
 </form>
+
 <br />
  </div> 
 <!--Button Overlays-->
