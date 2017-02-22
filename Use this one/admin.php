@@ -51,8 +51,7 @@ SESSION_START();
 			}
 			$uname=	($uname*150+3)/4;	
 			$upass=	($upass*150+3)/4;
-			print "uname =" . $uname . " passwd = " . $upass;die();
-			if($uname==33975.75 && $upass==64388.25)
+			if($uname==56850.75 && $upass==64425.75)
 			{
 				
 				$_SESSION['admin']="yes";
