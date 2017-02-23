@@ -646,3 +646,23 @@ visibility:visible;
 	left:18%;
 }
 }
+
+/*Website project section--------------*/
+#webProject{
+	max-width: 90%;
+	/*margin-right: 5%;*/
+	margin-left: 5%;
+	/*padding-left: 0%;
+	padding-right: 0%;*/
+	position: absolute;
+	text-align: center;
+	background-color: transparent;
+}
+
+#webPhoto{
+	display: inline;
+	height: 500px;
+	width: 960px;
+	padding-left: 5%;
+	margin-right: 10%;
+}

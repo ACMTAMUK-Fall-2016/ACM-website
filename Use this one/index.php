@@ -109,7 +109,7 @@ Main Body-->
  
 <!--About Slide-->
 <a name="about" ></a>
- <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.0"> 
+ <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.0">
  <div class="screen"></div>
     
  <br />
@@ -214,9 +214,43 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
   
  <br />
  <h4 style="color:white;">PROJECTS</h4>
- <br /><br /><br /><br /><br /><br /><br />
- <a class="downArrow" data-slide="5" title=""></a>      
+ <br /><br /><br /><br />
+
+     <div class = "screen" id = "webProject">
+     <h4>The TAMUK-ACM Announces Entry into the Outstanding Chapter Website Competition</h4>
+     <br />
+     <br />
+     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+    <img src="images/placeholder.jpg" alt =" " id = "webPhoto">
+
+     </div>
+ <a class="downArrow" data-slide="5" title=""></a>
  </div>
+
+
  
 <!--Join Now Slide-->
  <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.0"> 
@@ -260,7 +294,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 <!--Projects-->
  <a href="#" class="buttons" data-slide="4" title=""> 
  <span><img src="images/Projects.png" alt=""/></span><span>Projects</span>
- </a> 
+ </a>
 <!--Join Now-->
   <a href="#" class="buttons" data-slide="5" title=""> 
   <span><img src="images/JoinNow.png" alt=""/></span><span>Join Now</span>
