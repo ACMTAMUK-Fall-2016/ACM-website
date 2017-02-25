@@ -550,7 +550,7 @@ visibility:visible;
  SLIDE 1 
 *******************************/
 #slide1{
-    background-image:url('../images/Technology.png');
+    background-image:url('../images/Technology.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -561,7 +561,7 @@ visibility:visible;
  SLIDE 2 
 *******************************/
 #slide2{
-    background-image:url('../images/Technology 2.png');
+    background-image:url('../images/Technology 2.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -573,7 +573,7 @@ visibility:visible;
  SLIDE 3 
 *******************************/
 #slide3{
-    background-image:url('../images/Technology 3.png');
+    background-image:url('../images/Technology 3.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -585,7 +585,7 @@ visibility:visible;
  SLIDE 4 
 *******************************/
 #slide4{
-    background-image:url('../images/Technology 4.png');
+    background-image:url('../images/Technology 4.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -600,7 +600,7 @@ visibility:visible;
 *******************************/
  
 #slide5{
-    background-image:url('../images/Technology 5.png');
+    background-image:url('../images/Technology 5.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
