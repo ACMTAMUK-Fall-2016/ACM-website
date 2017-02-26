@@ -216,11 +216,11 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
  <h4 style="color:white;">PROJECTS</h4>
  <br /><br /><br /><br />
 
-     <div class = "screen" id = "webProject">
+     <div  id = "webProject">
      <h4>The TAMUK-ACM Announces Entry into the Outstanding Chapter Website Competition</h4>
      <br />
      <br />
-     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+     <p ><img src="images/placeholder.jpg" alt ="placeholder" id = "webPhoto" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
          interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
          justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
          ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
@@ -228,7 +228,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
          In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
      </p><br/>
 
-     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
          interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
          justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
          ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
@@ -236,7 +236,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
          In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
      </p><br/>
 
-     <p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
          interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
          justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
          ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
@@ -244,7 +244,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
          In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
      </p><br/>
 
-    <img src="images/placeholder.jpg" alt =" " id = "webPhoto">
+    
 
      </div>
  <a class="downArrow" data-slide="5" title=""></a>

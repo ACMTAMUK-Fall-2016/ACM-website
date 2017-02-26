@@ -585,6 +585,7 @@ visibility:visible;
  SLIDE 4 
 *******************************/
 #slide4{
+	min-height:800px;
     background-image:url('../images/Technology 4.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -657,12 +658,10 @@ visibility:visible;
 	position: absolute;
 	text-align: center;
 	background-color: transparent;
+	overflow:auto;
 }
 
 #webPhoto{
-	display: inline;
-	height: 500px;
-	width: 960px;
-	padding-left: 5%;
-	margin-right: 10%;
+	height: 100px;
+	width: 192px;
 }
