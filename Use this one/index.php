@@ -210,7 +210,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 <!--Project Slide-->
  <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.0">
 <a name="projects" ></a> 
- <div class="screen"></div>
+  <div class="screen"></div>
   
  <br />
  <h4 style="color:white;">PROJECTS</h4>
@@ -247,7 +247,27 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
     
 
      </div>
+	 <hr>
+	 <div  id = "webProject">
+    <h4>TAMUK-ACM's Inaugural Undertaking of the International Collegiate Programming Competition</h4>
+    <br />
+    <br />
+    <p ><img src="images/acmicpc_logo.png" alt ="placeholder" id = "webPhoto" />As most students were mentally preparing for an upcoming Fall break, a few members of the Texas A&M-Kingsville (TAMUK) chapter of the Association for Computing Machinery (ACM) were preparing to compete in their very first ACM International Collegiate Programming Competition (ICPC).
+	</p>
+	<p > 
+	Held every school year, the ACM-ICPC is an international competition sponsored by IBM where schools from all across the world meet to see who is the best at programming in the Java, PHP, C, C++, and Python coding languages.  The competition is so large and widespread, that it is held, concurrently, in many schools over several continents.  Each participating country is then broken up into several regions.  TAMUK is in the south-central district for the U.S., and the main regional competition was held at Baylor University in Waco, Texas.  The winners of these regional competitions then go on to meet at a final competition.  The location of the 2016 finals competition was the Prince of Sangkla University in Phuket, Thailand.</p>
+	<p >
+	Here's a brief rundown of what happens at a programming competition.  After all the initial signing in and receiving of instructions and such, the various teams are given a packet of information containing eight real-world problems.  They are also given a look at what the correct output should look like (output is not the program itself, it is the data that is provided by a program).  These teams then have five hours to determine how to best address these problems and create programs that give the correct output using all the programming knowledge and experience they can muster.  All answers are then scored based on the accuracy of the output, and the speed at which the problem was solved.</p>
+	</br>
+	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
+	</br>
+	<p >
+	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge and were supported and sponsored by the entire College of Engineering at TAMUK.  This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
+	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  ...Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p>
+     </div>
+	 </br></br></br></br>
  <a class="downArrow" data-slide="5" title=""></a>
+
  </div>
 
 

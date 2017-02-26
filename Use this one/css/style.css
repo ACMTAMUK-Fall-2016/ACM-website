@@ -124,6 +124,7 @@ img {
 }
 .info{
 	padding:0px 80px 0px 80px;
+	position:inherit;
 	/*background-color:rgba(0,0,0,.3);*/
 }
 .learn_more:link, .learn_more:visited {
@@ -203,15 +204,14 @@ img {
 }
 .screen{
 	background-color:rgba(250,250,250,0.25);
-	min-height:1000px;
+	min-height:100%;
 	width:100%;
 	position:absolute;
 }
 .slide {
  	 background-attachment: fixed;
  	 
-   color:white;
-	text-shadow: 1.5px 1.5px #000;
+   
     width:100%;
    	min-height:100%;
    	height:auto;
@@ -585,12 +585,8 @@ visibility:visible;
  SLIDE 4 
 *******************************/
 #slide4{
-<<<<<<< HEAD
 	min-height:800px;
-    background-image:url('../images/Technology 4.png');
-=======
     background-image:url('../images/Technology 4.jpg');
->>>>>>> refs/remotes/origin/Ross-Branch
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -659,7 +655,7 @@ visibility:visible;
 	margin-left: 5%;
 	/*padding-left: 0%;
 	padding-right: 0%;*/
-	position: absolute;
+	position: inherit;
 	text-align: center;
 	background-color: transparent;
 	overflow:auto;
@@ -668,4 +664,11 @@ visibility:visible;
 #webPhoto{
 	height: 100px;
 	width: 192px;
+}
+.quote{
+	background-color: transparent;
+   color:white;
+	text-shadow: 1.5px 1.5px #000;
+    font-weight: 700;
+   
 }
