@@ -478,6 +478,7 @@ visibility:visible;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .member{
 	height: 115px;
     width: 10%;
@@ -489,11 +490,13 @@ visibility:visible;
 	margin: 20px;
 	position:inherit;
 	display:inline-flex;
-	border-width:2px;
-	border-style:solid:
+	
+	
 	
 }
 .names{
+	text-shadow:1px 1px 1px #000;
+	text-align:-webkit-right;
 	position:absolute;
 	bottom:5px;
 }
@@ -676,4 +679,10 @@ visibility:visible;
 	text-shadow: 1.5px 1.5px #000;
     font-weight: 700;
    
+}
+.projects_link{
+	color:#000;
+}
+.projects_link:hover{
+	background-color:transparent;
 }
