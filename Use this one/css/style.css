@@ -12,6 +12,11 @@ a:link{
     color:#ffffff;
     text-decoration: none;
 }
+p{
+	 text-indent: 25px;
+	 text-align:left;
+	 padding:5px;
+}
 #acmLogo{
 	height:90px;
 	width:90px;
