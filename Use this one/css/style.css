@@ -12,6 +12,11 @@ a:link{
     color:#ffffff;
     text-decoration: none;
 }
+p{
+	 text-indent: 25px;
+	 text-align:left;
+	 padding:5px;
+}
 #acmLogo{
 	height:90px;
 	width:90px;
@@ -124,6 +129,7 @@ img {
 }
 .info{
 	padding:0px 80px 0px 80px;
+	position:inherit;
 	/*background-color:rgba(0,0,0,.3);*/
 }
 .learn_more:link, .learn_more:visited {
@@ -203,15 +209,14 @@ img {
 }
 .screen{
 	background-color:rgba(250,250,250,0.25);
-	min-height:1000px;
+	min-height:100%;
 	width:100%;
 	position:absolute;
 }
 .slide {
  	 background-attachment: fixed;
  	 
-   color:white;
-	text-shadow: 1.5px 1.5px #000;
+   
     width:100%;
    	min-height:100%;
    	height:auto;
@@ -473,6 +478,7 @@ visibility:visible;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .member{
 	height: 115px;
     width: 10%;
@@ -484,11 +490,13 @@ visibility:visible;
 	margin: 20px;
 	position:inherit;
 	display:inline-flex;
-	border-width:2px;
-	border-style:solid:
+	
+	
 	
 }
 .names{
+	text-shadow:1px 1px 1px #000;
+	text-align:-webkit-right;
 	position:absolute;
 	bottom:5px;
 }
@@ -585,6 +593,7 @@ visibility:visible;
  SLIDE 4 
 *******************************/
 #slide4{
+	min-height:800px;
     background-image:url('../images/Technology 4.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -645,4 +654,35 @@ visibility:visible;
 	right:15%;
 	left:18%;
 }
+}
+
+/*Website project section--------------*/
+#webProject{
+	max-width: 90%;
+	/*margin-right: 5%;*/
+	margin-left: 5%;
+	/*padding-left: 0%;
+	padding-right: 0%;*/
+	position: inherit;
+	text-align: center;
+	background-color: transparent;
+	overflow:auto;
+}
+
+#webPhoto{
+	height: 100px;
+	width: 192px;
+}
+.quote{
+	background-color: transparent;
+   color:white;
+	text-shadow: 1.5px 1.5px #000;
+    font-weight: 700;
+   
+}
+.projects_link{
+	color:#000;
+}
+.projects_link:hover{
+	background-color:transparent;
 }

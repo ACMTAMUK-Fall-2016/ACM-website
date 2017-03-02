@@ -109,12 +109,12 @@ Main Body-->
  
 <!--About Slide-->
 <a name="about" ></a>
- <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.0"> 
+ <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.0">
  <div class="screen"></div>
     
  <br />
  
-	<h4>About the ACM Organization</h4>
+	<h4 style="color:white;" >About the ACM Organization</h4>
 	 <br /><br /><br /><br /><br /><br /><br />
 	 <p class="info">
 ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. 
@@ -210,13 +210,67 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 <!--Project Slide-->
  <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.0">
 <a name="projects" ></a> 
- <div class="screen"></div>
+  <div class="screen"></div>
   
  <br />
  <h4 style="color:white;">PROJECTS</h4>
- <br /><br /><br /><br /><br /><br /><br />
- <a class="downArrow" data-slide="5" title=""></a>      
+ <br /><br /><br /><br />
+
+     <div  id = "webProject">
+     <h4>The TAMUK-ACM Announces Entry into the Outstanding Chapter Website Competition</h4>
+     <br />
+     <br />
+     <p ><img src="images/placeholder.jpg" alt ="placeholder" id = "webPhoto" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
+         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
+         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
+         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
+         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
+         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
+     </p><br/>
+
+    
+
+     </div>
+	 <hr>
+	 <div  id = "webProject">
+    <h4>TAMUK-ACM's Inaugural Undertaking of the International Collegiate Programming Competition</h4>
+    <br />
+    <br />
+    <p ><a href="https://icpc.baylor.edu/" target="_ blank"><img src="images/acmicpc_logo.png" alt ="placeholder" id = "webPhoto" /></a>As most students were mentally preparing for an upcoming break in the Fall of 2016, a few members of the Texas A&M-Kingsville (TAMUK) chapter of the Association for Computing Machinery (ACM) were preparing to compete in their very first ACM International Collegiate Programming Competition (ICPC).
+	</p>
+	<p > 
+	Held every school year, the ACM-ICPC is an international competition sponsored by IBM where schools from all across the world meet to see who is the best at programming in the Java, PHP, C, C++, and Python coding languages.  The competition is so large and widespread, that it is held, concurrently, in many schools over several continents.  Each participating country is then broken up into several regions.  TAMUK is in the south-central region of the U.S. and the main regional competition was held at Baylor University in Waco, Texas.  The winners of these regional competitions then go on to meet at a final competition.  The location of the 2016 final competition was the Prince of Sangkla University in Phuket, Thailand.</p>
+	<p >
+	Here's a brief rundown of what happens at a programming competition.  After all the initial signing in and receiving of instructions and such, the various teams are given a packet of information containing eight real-world problems.  They are also given a look at what the correct output should look like (output is not the program itself, it is the data that is provided by a program).  These teams then have five hours to determine how to best address these problems and create programs that give the correct output using all the programming knowledge and experience they can muster.  All answers are then scored based on the accuracy of the output and the speed at which the problem was solved.</p>
+	</br>
+	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
+	</br>
+	<p >
+	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a style="text-decoration:underline;" class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
+	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p>
+     </div>
+	 </br></br></br></br>
+ <a class="downArrow" data-slide="5" title=""></a>
+
  </div>
+
+
  
 <!--Join Now Slide-->
  <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.0"> 
@@ -260,7 +314,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 <!--Projects-->
  <a href="#" class="buttons" data-slide="4" title=""> 
  <span><img src="images/Projects.png" alt=""/></span><span>Projects</span>
- </a> 
+ </a>
 <!--Join Now-->
   <a href="#" class="buttons" data-slide="5" title=""> 
   <span><img src="images/JoinNow.png" alt=""/></span><span>Join Now</span>
