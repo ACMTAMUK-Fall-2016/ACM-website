@@ -31,20 +31,20 @@ SESSION_START();
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!--Search Bar
+
  <div id="search_bar" >
  <br />
  <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
  <div id="search_bar_hidden">
- <form method="post" action="#" style="height:14px">
- <input size="22.5"style="height:16px;padding-top:2px;" name="search" type="text"/>
- <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" name="search" type="button"/>
+ <form method="post" action="search_results.php" style="height:14px">
+ <input size="22.5"style="height:16px;padding-top:2px;" name="search" placeholder="Look up a member here" type="text"/>
+ <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" type="submit" value=""/>
  </form>
  </div>
  <br />
  </div>  
 
-Main Body-->
+<!--Main Body-->
  <div class="main_body" id="main-body">
 <!--Home Slide-->
  <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0"> 
@@ -66,15 +66,18 @@ Main Body-->
 		<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
 		<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
 		<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+		<input name="cs_anchor1" id='cs_slide1_3' type="radio" class='cs_anchor slide' >
 		<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
 		<input name="cs_anchor1" id='cs_pause1_0' type="radio" class='cs_anchor pause'>
 		<input name="cs_anchor1" id='cs_pause1_1' type="radio" class='cs_anchor pause'>
 		<input name="cs_anchor1" id='cs_pause1_2' type="radio" class='cs_anchor pause'>
+		<input name="cs_anchor1" id='cs_pause1_3' type="radio" class='cs_anchor pause'>
 		<ul>
 			<li class="cs_skeleton"><img src="images/slide3.jpg" style="width: 100%;"></li>
 			<li class='num0 img slide'> <img class="imag" src='images/misc_pics/IMG_20160929_132726.jpg' alt='slide1' title='slide1' /></li>
 			<li class='num1 img slide'> <img class="imag" src='images/misc_pics/IMG_20160915_131034.jpg' alt='slide3' title='slide3' /></li>
 			<li class='num2 img slide'> <img class="imag"src='images/misc_pics/IMG_20161012_181707.jpg' alt='slide2' title='slide2' /></li>
+			<li class='num3 img slide'> <img class="imag"src='images/misc_pics/ACM1.jpg' alt='slide4' title='slide4' /></li>
 			
 		</ul>
 		
@@ -83,16 +86,19 @@ Main Body-->
 			<label class='cs_pause num0' for='cs_pause1_0'><span><i></i><b></b></span></label>
 			<label class='cs_pause num1' for='cs_pause1_1'><span><i></i><b></b></span></label>
 			<label class='cs_pause num2' for='cs_pause1_2'><span><i></i><b></b></span></label>
+			<label class='cs_pause num3' for='cs_pause1_3'><span><i></i><b></b></span></label>
 			</div>
 		<div class='cs_arrowprev'>
 			<label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
 			<label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
 			<label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
+			<label class='num2' for='cs_slide1_3'><span><i></i><b></b></span></label>
 		</div>
 		<div class='cs_arrownext'>
 			<label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
 			<label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
 			<label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
+			<label class='num2' for='cs_slide1_3'><span><i></i><b></b></span></label>
 		</div>
 		
 		</div>
@@ -127,8 +133,11 @@ and professional networking.
 Founded at the dawn of the computer age, ACM’s reach extends to every part of the globe, with more than half of its 100,000 members residing outside the U.S.  
 Its growing membership has led to Councils in Europe, India, and China, fostering networking opportunities that strengthen ties within and across countries and 
 technical communities.  Their actions enhance ACM’s ability to raise awareness of computing’s important technical, educational, and social issues around the world. 
-
-</p>   
+</p> 
+<br/>  
+<p class="info" >
+The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to give every student here a chance to explore the computer sciences in a fun and welcoming environment.  All disciplines are welcome to learn and develop their skills in web design, game design, coding, research, mentoring, and any other topic that would be of benefit to the computing world.  While membership in the larger, international ACM organization is strongly encouraged, it is not necessary to join the meetings held at TAMUK.  Click the "Join Now" tab for more information on how to become a member of the ACM-TAMUK.
+</p>
 <div class="learn_more">
  <br/>
  <a href="http://www.acm.org/" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
@@ -154,23 +163,22 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 		$name_string="";
 	}
 	fclose($myfile);
-	$member_name_arr = explode(",", $name_string);
+	$member_name_arr = explode("/,", $name_string);
 	for($i=0;$i<count($member_name_arr);$i++)
 	{
 		$member_name_arr_exp[$i] = explode(" - ", $member_name_arr[$i]);
 	}
-	//var_dump($member_name_arr_exp);print "<br />";
 	$directory = 'images/members/';
-	if (glob($directory . '*.jpg') != false)
-	{
-		$filecount = count(glob($directory . '*.jpg'));
-		
-	}else
-	{
-		$filecount=0;
-	}
-	
-	for($i=0;$i<$filecount;$i++)
+	$n = count($member_name_arr_exp);
+	//var_dump($member_name_arr_exp);die();
+		for($j=0;$j<$n;$j++)
+		{
+			if($j==$n-1){
+				$newest_num = $member_name_arr_exp[$j-1][0];
+				
+			}
+		}
+	for($i=0;$i<$newest_num;$i++)
 	{	$f=$i+1;
 		for($j=0;$j<count($member_name_arr);$j++)
 		{
@@ -190,16 +198,16 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
  <?php
   if(isset($_SESSION['admin'])&&$_SESSION['admin']=="yes")
   {
-	  print "<a class='add_members' href='admin.php'>Edit Members<a/>";
+	  print "<a class='add_members' href='admin/admin.php'>Edit Members<a/>";
 	  
   }else
   {
 	  print '<a class="add_members" >Edit Members
 			 <div class="admin_login">
-			 <form class="admin_login_form" action="admin.php" method="POST"><br />
+			 <form class="admin_login_form" action="admin/admin.php" method="POST"><br />
 			 <input type="text" size="inherit" name="username" required="required" placeholder="Username" /><br /><br />
 			 <input type="password" size="inherit" name="password" required="required" placeholder="Password" /><br /><br />
-			 <input type="submit" name="admin_submit" value="Log In" />
+			 <input type="submit" value="Submit" name="admin_submit" value="Log In" />
 			 </form></div></a>';
   }
 ?>
@@ -262,8 +270,13 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
 	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
 	</br>
 	<p >
+<<<<<<< HEAD
+	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
+	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p></br>
+=======
 	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a style="text-decoration:underline;" class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
 	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p>
+>>>>>>> refs/remotes/origin/master
 	<iframe width="280" height="157.5" src="https://www.youtube.com/embed/3rfZpKe9rdg" frameborder="0" allowfullscreen></iframe>
      </div>
 	 </br></br></br></br>
@@ -283,7 +296,7 @@ technical communities.  Their actions enhance ACM’s ability to raise awareness
  <br /><br /><br /><br /><br /><br /><br /><br />
  <p class="info">
  If you would like more information about joining the Texas A &amp; M Kingsville
- chapter of ACM please email pgarcia@thomaswurdinger.com
+ chapter of ACM please email <a class="search_links" style="color:#000;" href="mailto:webmaster@acm-tamuk.com">webmaster@acm-tamuk.com</a>
  </p>
  <br/>
  <p class="info">

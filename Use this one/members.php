@@ -2,7 +2,7 @@
 	$myfile = fopen("images/members/member_names.txt", "r") or die("Unable to open file!");
 	$name_string = fread($myfile,filesize("images/members/member_names.txt"));
 	fclose($myfile);
-	$member_name_arr = explode(",", $name_string);
+	$member_name_arr = explode("/,", $name_string);
 	$num = $_GET['mem'];
 	for($i=0;$i<count($member_name_arr);$i++)
 	{
@@ -10,6 +10,9 @@
 		if($member_name_arr_exp[$i][0]==$num)
 		{
 			$member_name=$member_name_arr_exp[$i][1];
+			$member_text1=substr($member_name_arr_exp[$i][2],0,18);
+			$member_text2=substr($member_name_arr_exp[$i][2],18);
+			
 			
 		}
 	}
@@ -46,20 +49,20 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!--Search Bar
+
  <div id="search_bar" >
  <br />
  <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
  <div id="search_bar_hidden">
- <form method="post" action="#" style="height:14px">
+ <form method="post" action="search_results.php" style="height:14px">
  <input size="22.5"style="height:16px;padding-top:2px;" name="search" type="text"/>
- <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" name="search" type="button"/>
+ <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" type="submit" value=""/>
  </form>
  </div>
  <br />
  </div>  
 
-Main Body-->
+<!--Main Body-->
  <div class="main_body" id="main-body">
 
  
@@ -70,7 +73,15 @@ Main Body-->
  <br />
  <h4 style="color:white;"><?php echo $member_name ?></h4>
  <br />
- <img class="member" style="height:160px;width:auto;" src='images/members/<?php echo $num ?>.jpg' alt='<?php echo $member_name ?>' title='<?php echo $member_name ?>'>
+
+ <img class="member2" style="height:160px;width:auto;" src='images/members/<?php echo $num ?>.jpg' alt='<?php echo $member_name ?>' title='<?php echo $member_name ?>'> 
+ <p style="position:relative;text-align:left;text-indent:15px;" >
+ <?php
+	print $member_text1 . "<p style='position:relative;' >"; 
+	print $member_text2 . "</p>";
+ ?>
+ </p>
+
  <br />
  </div> 
 <!--Button Overlays-->
