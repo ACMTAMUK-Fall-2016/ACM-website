@@ -270,8 +270,13 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
 	</br>
 	<p >
+<<<<<<< HEAD
 	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
 	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p></br>
+=======
+	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a style="text-decoration:underline;" class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
+	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p>
+>>>>>>> refs/remotes/origin/master
 	<iframe width="280" height="157.5" src="https://www.youtube.com/embed/3rfZpKe9rdg" frameborder="0" allowfullscreen></iframe>
      </div>
 	 </br></br></br></br>
