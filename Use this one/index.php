@@ -331,8 +331,8 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 <!--Follow Us-->
   <a class="buttons" title=""><span id="FU"data-slide="6" title="">
   <b>Follow Us</b></span></a>
-  <!--Youtube-->
-  <a href="#" target="_blank" class="buttons" > 
+  <!--Calendar-->
+  <a href="https://tamuk.collegiatelink.net/organization/acm/events" target="_blank" class="buttonsy" > 
   <span><img src="images/c_link.png" alt=""/></span><span>Calendar of Events</span>
   </a>
 <!--Twitter-->
@@ -385,7 +385,7 @@ Join Now
 </div>
 </a>
 <img id="FUsmall" src="images/FU.png" alt=""/>
-<a href="#" target="_blank" class="buttony" data-slide="9" title=""><img class="imgButton" src="images/c_link.png" alt=""/></a>
+<a href="https://tamuk.collegiatelink.net/organization/acm/events" target="_blank" class="buttonsy" data-slide="9" title=""><img class="imgButton" src="images/c_link.png" alt=""/></a>
 <div id="twitterFeed" style="width:100%;">
   <a href="#" class="buttony" data-slide="7" title="" style="height:100%;" ><img class="imgButton" src="images/Twitter.png" alt=""/></a> 
  
