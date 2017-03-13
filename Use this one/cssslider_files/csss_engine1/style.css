@@ -183,7 +183,7 @@
   animation: arrow1 24000ms infinite 14000ms;
 }
 .csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num0,
-.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num3 {
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num2 {
   -webkit-animation: arrow1 24000ms infinite 22000ms;
   animation: arrow1 24000ms infinite 22000ms;
 }

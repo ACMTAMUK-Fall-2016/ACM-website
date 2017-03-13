@@ -61,30 +61,10 @@
 							}
 					}
 				}				
-				// endo of searching by member
-				//Start Search of individual page text.
-				$directory = '/';
-				$filtes = array();
-				if (glob('*.php') != false)
-				{
-					foreach (glob('*.php') as $file) {
-					  //search each page with the ".php" extension.  THIS IS WHY ALL ADMIN PAGES MUST BE IN THE ADMIN FOLDER
-					  // WE DO NOT WANT THEM SEARCHED.
-					  
-					}
-				}else
-				{
-					$filecount=0;
-				}
-				
-				
+				// end of searching by member
 			}
-				
-				
-			
 		}
-	}
-	
+	}		
  ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -121,7 +101,7 @@
  <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
  <div id="search_bar_hidden">
  <form method="post" action="search_results.php" style="height:14px">
- <input size="22.5"style="height:16px;padding-top:2px;" name="search" type="text"/>
+ <input size="22.5"style="height:16px;padding-top:2px;" name="search" placeholder="Look up a member here" type="text"/>
  <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" type="submit" value=""/>
  </form>
  </div>
@@ -142,8 +122,11 @@
  <div class="results" target="_blank" >
 <?php
 	if(isset($mem_search_results)&&$mem_search_results!==""){
-		print "<h3 style='color:#fff' ><u>Members</u></h3></br>";
-		print $mem_search_results;
+		if(isset($mem_search_results)&&$mem_search_results!==""){
+			print "<h3 style='color:#fff' ><u>Members</u></h3></br>";
+			print $mem_search_results;
+			print "</br>";
+		}
 	}else{
 		print "<div class='search_null' >There were no results found.</div>";
 	}

@@ -55,7 +55,7 @@
  <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
  <div id="search_bar_hidden">
  <form method="post" action="search_results.php" style="height:14px">
- <input size="22.5"style="height:16px;padding-top:2px;" name="search" type="text"/>
+ <input size="22.5"style="height:16px;padding-top:2px;" name="search" placeholder="Look up a member here" type="text"/>
  <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" type="submit" value=""/>
  </form>
  </div>

@@ -73,7 +73,7 @@ SESSION_START();
 		<input name="cs_anchor1" id='cs_pause1_2' type="radio" class='cs_anchor pause'>
 		<input name="cs_anchor1" id='cs_pause1_3' type="radio" class='cs_anchor pause'>
 		<ul>
-			<li class="cs_skeleton"><img src="images/slide3.jpg" style="width: 100%;"></li>
+			<li class="cs_skeleton"><img src="images/slide3.jpg" style="height:100%;width:100%;">
 			<li class='num0 img slide'> <img class="imag" src='images/misc_pics/IMG_20160929_132726.jpg' alt='slide1' title='slide1' /></li>
 			<li class='num1 img slide'> <img class="imag" src='images/misc_pics/IMG_20160915_131034.jpg' alt='slide3' title='slide3' /></li>
 			<li class='num2 img slide'> <img class="imag"src='images/misc_pics/IMG_20161012_181707.jpg' alt='slide2' title='slide2' /></li>
@@ -270,13 +270,8 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
 	</br>
 	<p >
-<<<<<<< HEAD
 	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
 	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p></br>
-=======
-	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a style="text-decoration:underline;" class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
-	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p>
->>>>>>> refs/remotes/origin/master
 	<iframe width="280" height="157.5" src="https://www.youtube.com/embed/3rfZpKe9rdg" frameborder="0" allowfullscreen></iframe>
      </div>
 	 </br></br></br></br>
@@ -337,8 +332,8 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
   <a class="buttons" title=""><span id="FU"data-slide="6" title="">
   <b>Follow Us</b></span></a>
   <!--Youtube-->
-  <a href="https://www.youtube.com/channel/UCY9beuTTuzTVdlTDZ8lITOg" target="_blank" class="buttons" > 
-  <span><img src="images/Youtube.png" alt=""/></span><span>Youtube</span>
+  <a href="#" target="_blank" class="buttons" > 
+  <span><img src="images/c_link.png" alt=""/></span><span>Calendar of Events</span>
   </a>
 <!--Twitter-->
 <div id="twitterFeed" style="width:100%;">
@@ -390,7 +385,7 @@ Join Now
 </div>
 </a>
 <img id="FUsmall" src="images/FU.png" alt=""/>
-<a href="https://www.youtube.com/channel/UCY9beuTTuzTVdlTDZ8lITOg" target="_blank" class="buttony" data-slide="9" title=""><img class="imgButton" src="images/Youtube.png" alt=""/></a>
+<a href="#" target="_blank" class="buttony" data-slide="9" title=""><img class="imgButton" src="images/c_link.png" alt=""/></a>
 <div id="twitterFeed" style="width:100%;">
   <a href="#" class="buttony" data-slide="7" title="" style="height:100%;" ><img class="imgButton" src="images/Twitter.png" alt=""/></a> 
  
