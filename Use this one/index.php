@@ -154,6 +154,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <br />
  <h4 style="color:white;">MEMBERS</h4>
  <br />
+ <p style="color:white;text-align:center;" >- click any photo - </p>
 	<?php
 	$myfile = fopen("images/members/member_names.txt", "r") or die("Unable to open file!");
 	if(filesize("images/members/member_names.txt")>0){
@@ -256,6 +257,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 
      </div>
 	 <hr>
+	 <a name="ICPC">
 	 <div  id = "webProject">
     <h4>TAMUK-ACM's Inaugural Undertaking of the International Collegiate Programming Competition</h4>
     <br />
@@ -291,7 +293,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <br /><br /><br /><br /><br /><br /><br /><br />
  <p class="info">
  If you would like more information about joining the Texas A &amp; M Kingsville
- chapter of ACM please email <a class="search_links" style="color:#000;" href="mailto:webmaster@acm-tamuk.com">webmaster@acm-tamuk.com</a>
+ chapter of ACM please email us at <a class="search_links" style="color:#000;" href="mailto:webmaster@acm-tamuk.com">webmaster@acm-tamuk.com</a> or visit us in EC 112 Thursdays at 1 p.m. 
  </p>
  <br/>
  <p class="info">
