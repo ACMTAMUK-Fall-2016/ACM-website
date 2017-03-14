@@ -92,13 +92,13 @@ SESSION_START();
 			<label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
 			<label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
 			<label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
-			<label class='num2' for='cs_slide1_3'><span><i></i><b></b></span></label>
+			<label class='num3' for='cs_slide1_3'><span><i></i><b></b></span></label>
 		</div>
 		<div class='cs_arrownext'>
 			<label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
 			<label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
 			<label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
-			<label class='num2' for='cs_slide1_3'><span><i></i><b></b></span></label>
+			<label class='num3' for='cs_slide1_3'><span><i></i><b></b></span></label>
 		</div>
 		
 		</div>
@@ -306,6 +306,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <a href="http://www.acm.org/membership/join-acm" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
  <br/>
  </div> 
+  <div class="copyright" >&copy; 2016 | Texas A &amp; M University-Kingsville Association for Computing Machinery</div>
 <!--Button Overlays-->
  </div>
  <!--Beginning of Side Bar-->
@@ -339,7 +340,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
   </a>
 <!--Twitter-->
 <div id="twitterFeed" style="width:100%;">
-  <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:100%" data-slide="8" title=""> 
+  <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:101%" data-slide="8" title=""> 
   <span><img src="images/Twitter.png" alt=""/></span><span>Twitter</span>
   </a> <div class="twitter-timeline">
   <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
@@ -349,7 +350,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
   </div>
 <!--Facebook-->
 <div id="facebookFeed" style="width:100%;">
-  <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:100%" class="buttons" data-slide="9" title="">
+  <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:101%" class="buttons" data-slide="9" title="">
   <span><img src="images/facebook.png" alt=""/></span><span>Facebook</span>
   </a>
   <div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
@@ -363,6 +364,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
   </div>
 
  </div>
+ 
 <div class="side_bar_overlay" >
 <a href="#" class="buttony" data-slide="1" title=""><img class="imgButton" src="images/house.png" alt=""/>
 <div class="popout1" >
@@ -409,7 +411,7 @@ Join Now
   </div>
 <div class="buttony" data-slide="9" title=""><img class="imgButton" src="images/Blank.png" alt=""/></div>
 </div>
-<div class="copyright" >&copy; 2016 | Texas A &amp; M University-Kingsville Association for Computing Machinery</div>
+
  
  </body>
  </html>

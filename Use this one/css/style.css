@@ -476,9 +476,8 @@ visibility:visible;
   transition-duration: 0.3s;
 }
 .copyright{
-	position:fixed;
-	bottom:25px;
-	z-index:-1;
+	position:absolute;
+	bottom:5px;
 	right:18%;
 	background:none;
 }

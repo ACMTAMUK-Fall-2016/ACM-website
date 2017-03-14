@@ -166,7 +166,7 @@ if($_SESSION['admin']=="yes"){
   </a>
 <!--Twitter-->
 <div id="twitterFeed" style="width:100%;">
-  <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:100%" data-slide="8" title=""> 
+  <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:101%" data-slide="8" title=""> 
   <span><img src="../images/Twitter.png" alt=""/></span><span>Twitter</span>
   </a> <div class="twitter-timeline">
   <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
@@ -176,7 +176,7 @@ if($_SESSION['admin']=="yes"){
   </div>
 <!--Facebook-->
 <div id="facebookFeed" style="width:100%;">
-  <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:100%" class="buttons" data-slide="9" title="">
+  <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:101%" class="buttons" data-slide="9" title="">
   <span><img src="../images/facebook.png" alt=""/></span><span>Facebook</span>
   </a>
   <div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
