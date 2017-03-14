@@ -239,7 +239,7 @@ img {
 }
 .slide {
  	 background-attachment: fixed;
- 	 
+ 	 overflow-x:hidden;
    
     width:100%;
    	min-height:100%;
@@ -531,6 +531,7 @@ visibility:visible;
 .names{
 	text-shadow:1px 1px 1px #000;
 	text-align:-webkit-right;
+	text-align:right;
 	position:absolute;
 	bottom:5px;
 }
