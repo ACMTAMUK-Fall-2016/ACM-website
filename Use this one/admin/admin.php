@@ -1,6 +1,7 @@
 ﻿<?php
 SESSION_START();
-	if(isset($_POST['add_member'])){
+	if(isset($_POST['add_member'])&&$_POST['types']==="student"){
+		
 		$new_op_text2 = "";
 		$new_first=$_POST['member_first'];
 		$new_last=$_POST['member_last'];
@@ -37,7 +38,7 @@ SESSION_START();
 		$files = "../images/members/";
 		$temp= $newest_num . ".jpg";
 		
-		if(isset($_FILES['member_pic']['tmp_name'])&&$_FILES['member_pic']['tmp_name']>0)
+		if(isset($_FILES['member_pic']['tmp_name'])&&$_FILES['member_pic']['tmp_name']!=="")
 		{	$_FILES["member_pic"]["name"]=$temp;
 			move_uploaded_file($_FILES['member_pic']['tmp_name'], $files . basename($_FILES['member_pic']['name'] ));
 		}else
@@ -51,6 +52,57 @@ SESSION_START();
 		file_put_contents($file,$string, FILE_APPEND | LOCK_EX);
 		header('Location: admin.php');
 		
+	}
+	if(isset($_POST['add_member'])&&$_POST['types']==="faculty"){
+		$new_op_text2 = "";
+		$new_first=$_POST['member_first'];
+		$new_last=$_POST['member_last'];
+		$new_since=$_POST['member_since'];
+		$trimmed= ltrim($_POST['member_op_text']," ");
+		$new_op_text=explode("    ",$_POST['member_op_text']);
+		for($s=0;$s<count($new_op_text);$s++){
+			if($s!==count($new_op_text)-1){
+				$new_op_text2 .= $new_op_text[$s] . "</br>&nbsp;&nbsp;&nbsp;&nbsp;";
+			}
+		}
+		$directory = '../images/faculty/';
+		$myfile = fopen("../images/faculty/faculty_names.txt", "r") or die("Unable to open file!");
+		if(filesize("../images/faculty/faculty_names.txt")>0){
+			$name_string = fread($myfile,filesize("../images/faculty/faculty_names.txt"));
+		}else
+		{
+			$name_string="";
+		}
+		fclose($myfile);
+		$member_name_arr = explode("/,", $name_string);
+		for($i=0;$i<count($member_name_arr);$i++)
+		{
+			$member_name_arr_exp[$i] = explode(" - ", $member_name_arr[$i]);
+		}
+		$n = count($member_name_arr_exp)-1;
+		for($j=0;$j<=$n;$j++)
+		{
+			if($j==$n-1){
+				$newest_num = $member_name_arr_exp[$j][0]+1;
+			}
+		}
+		$file = "../images/faculty/faculty_names.txt";
+		$files = "../images/faculty/";
+		$temp= $newest_num . ".jpg";
+		
+		if(isset($_FILES['member_pic']['tmp_name'])&&$_FILES['member_pic']['tmp_name']!=="")
+		{	$_FILES["member_pic"]["name"]=$temp;
+			move_uploaded_file($_FILES['member_pic']['tmp_name'], $files . basename($_FILES['member_pic']['name'] ));
+		}else
+		{
+			$filer="../images/No_Pic.jpg";
+			$newfile = "../images/faculty/" . $temp;
+			copy($filer, $newfile);
+			
+		}
+		$string=$newest_num . " - " . $new_first . " " . $new_last . " - Member Since: " . $new_since . " " . $new_op_text2 . "/,";
+		file_put_contents($file,$string, FILE_APPEND | LOCK_EX);
+		header('Location: admin.php');
 	}
 	if (!empty($_POST)||$_SESSION['admin']=="yes")
 	{
@@ -147,6 +199,9 @@ SESSION_START();
 <textarea name="member_op_text" style="min-height:5em;" placeholder="Optional Text.  Please indent new paragraphs AT LEAST 4 (four) spaces." /></textarea><br /><br />
 Optional Picture:<br />
 <input type="file" name="member_pic" id="member_pic" accept="image/*" capture="camera" style="max-width:32.5%;" ><br /><br />
+This person is:</br>
+A student <input type="radio" name="types" id="types" value="student" checked="checked" ></br>
+Faculty <input type="radio" name="types" id="types" value="faculty" ></br></br>
 <input type="submit" value="Add member" name="add_member" value="Add Member" onClick="return confirm('Do you wish to add a member?')" /><br /><br />
 <input type="reset" name="reset" value="Clear Form" /><br /><br />
 <div style="width:25%;margin-left:37.5%">

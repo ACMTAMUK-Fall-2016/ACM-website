@@ -33,9 +33,13 @@
 				$len = strlen($subject);
 				if(strlen($pattern)>$len){
 					$pattern3 = ltrim(substr($pattern,0,$len));//Shortened first
+				}else{
+					$pattern3 = "";
 				}
 				if(strlen($pattern2)>$len){
 					$pattern4 = ltrim(substr($pattern2,0,$len));//Shortened last
+				}else{
+					$pattern4 = "";
 				}
 				// First: we check members for a match
 				if (strcasecmp($pattern, $subject) == 0 || strpos($pattern,$subject)==true||strcasecmp($pattern3, $subject) == 0 ) {
@@ -72,6 +76,88 @@
 					}
 				}				
 				// end of searching by member
+			}
+		}
+		
+		
+		$member_name_arr = null;
+		$member_name_arr_exp = null;
+		$f_mem_search_results = "";
+		///// faculty search
+		$myfile = fopen("images/faculty/faculty_names.txt", "r") or die("Unable to open file!");
+		if(filesize("images/faculty/faculty_names.txt")>0){
+			$name_string = fread($myfile,filesize("images/faculty/faculty_names.txt"));
+		}else
+		{
+			$name_string="";
+		}
+		fclose($myfile);
+		$member_name_arr = explode("/,", $name_string);
+		for($i=0;$i<count($member_name_arr);$i++)
+		{
+			$member_name_arr_exp[$i] = explode(" - ", $member_name_arr[$i]);
+		}
+		$n = count($member_name_arr_exp)-1;
+		for($j=0;$j<$n;$j++)
+		{
+			
+			$newest_num[$j] = explode(" ",$member_name_arr_exp[$j][1]);
+			if($newest_num[$j][0]!=="Dr."){
+				$pattern = ltrim($newest_num[$j][0]," ");// member first name
+				$pattern2 = ltrim($newest_num[$j][1]," ");// member last name
+			}else{
+				$pattern = ltrim($newest_num[$j][1]," ");// member first name
+				$pattern2 = ltrim($newest_num[$j][2]," ");// member last name
+			}
+			// This is where we go word by word.
+			for($m=0;$m<count($search_array);$m++){
+				$subject=$search_array[$m];
+				$len = strlen($subject);
+				if(strlen($pattern)>$len){
+					$pattern3 = ltrim(substr($pattern,0,$len));//Shortened first
+				}else{
+					$pattern3 = "";
+				}
+				if(strlen($pattern2)>$len){
+					$pattern4 = ltrim(substr($pattern2,0,$len));//Shortened last
+				}else{
+					$pattern4 = "";
+				}
+				// First: we check members for a match
+				if (strcasecmp($pattern, $subject) == 0 || strpos($pattern,$subject)==true||strcasecmp($pattern3, $subject) == 0 ) {
+					$f_mem_num = $member_name_arr_exp[$j][0];
+					$f_mem_name = $member_name_arr_exp[$j][1];
+							$f_mem_text = substr(strip_tags($member_name_arr_exp[$j][2]),18,100) . "...";
+							if(strpos($f_mem_search_results,$f_mem_name)==false){
+								$f_mem_search_results  .= "&bull;<a class='search_links' href='members.php?faculty=" . $f_mem_num . "' >" . $f_mem_name . ": " . $f_mem_text . "</a></br></br>";
+							}
+					if(isset($search_array[$m+1])){
+						$subject2=$search_array[$m+1];
+						if (strcasecmp($pattern2, $subject2) == 0 || strpos($pattern2,$subject2)==true||strcasecmp($pattern4, $subject) == 0 ) {
+							$f_mem_num = $member_name_arr_exp[$j][0];
+							header("Location: members.php?faculty=" . $f_mem_num);
+						}else{
+							$f_mem_num = $member_name_arr_exp[$j][0];
+							$f_mem_name = $member_name_arr_exp[$j][1];
+							$f_mem_text = substr(strip_tags($member_name_arr_exp[$j][2]),18,100) . "...";
+							if(strpos($f_mem_search_results,$f_mem_name)==false){
+								$f_mem_search_results  .= "&bull;<a class='search_links' href='members.php?faculty=" . $f_mem_num . "' >" . $f_mem_name . ": " . $f_mem_text . "</a></br></br>";
+							}
+						}
+					}
+					
+				}else{
+					if(strcasecmp($pattern2, $subject) == 0 || strpos($pattern2,$subject)==true||strcasecmp($pattern4, $subject) == 0 ) 
+					{
+						$f_mem_num = $member_name_arr_exp[$j][0];
+						$f_mem_name = $member_name_arr_exp[$j][1];
+						$f_mem_text = substr(strip_tags($member_name_arr_exp[$j][2]),18,100) . "...";	
+						if(strpos($f_mem_search_results,$f_mem_name)==false){
+								$f_mem_search_results  .= "&bull;<a class='search_links' href='members.php?faculty=" . $f_mem_num . "' >" . $f_mem_name . ": " . $f_mem_text . "</a></br></br>";
+							}
+					}
+				}				
+				// end of searching faculty
 			}
 		}
 	}		
@@ -132,14 +218,19 @@
  <div class="results" target="_blank" >
 <?php
 	if(isset($mem_search_results)&&$mem_search_results!==""){
-		if(isset($mem_search_results)&&$mem_search_results!==""){
-			print "<h3 style='color:#fff' ><u>Members</u></h3></br>";
-			print $mem_search_results;
+		print "<h3 style='color:#fff' ><u>Members</u></h3></br>";
+		print $mem_search_results;
+		print "</br>";
+	}else{
+		if(!isset($f_mem_search_results)||$f_mem_search_results===""){
+			print "<div class='search_null' >There were no results found.</div>";
+		}
+	}
+	if(isset($f_mem_search_results)&&$f_mem_search_results!==""){
+			print "<h3 style='color:#fff' ><u>Faculty</u></h3></br>";
+			print $f_mem_search_results;
 			print "</br>";
 		}
-	}else{
-		print "<div class='search_null' >There were no results found.</div>";
-	}
 ?>
  </div>
  <br />

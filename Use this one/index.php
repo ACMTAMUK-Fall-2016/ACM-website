@@ -149,9 +149,13 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 <!--Member Slide-->
 <a name="members" ></a>
  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.0">  
- <div class="screen" id="mem_pop_up" >
+ <div class="screen" ></div>
+ <div class="click_off" id="click_off" ></div>
+ <div class="screen2" id="mem_pop_up" >
+ 
 	 <input type="button" id="close_x" class="close_x" value="X" onClick="closer()" />
  </div>
+ 
  
  <br />
  <h4 style="color:white;">MEMBERS</h4>
@@ -159,28 +163,57 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <p style="color:white;text-align:center;" >- click any photo - </p>
 	<?php
 	$myfile = fopen("images/members/member_names.txt", "r") or die("Unable to open file!");
+	$myfile2 = fopen("images/faculty/faculty_names.txt", "r") or die("Unable to open file!");
 	if(filesize("images/members/member_names.txt")>0){
 		$name_string = fread($myfile,filesize("images/members/member_names.txt"));
 	}else
 	{
 		$name_string="";
 	}
+	if(filesize("images/faculty/faculty_names.txt")>0){
+		$f_name_string = fread($myfile2,filesize("images/faculty/faculty_names.txt"));
+		
+	}else
+	{
+		$f_name_string="";
+	}
 	fclose($myfile);
+	fclose($myfile2);
 	$member_name_arr = explode("/,", $name_string);
+	$f_member_name_arr = explode("/,", $f_name_string);
 	for($i=0;$i<count($member_name_arr);$i++)
 	{
 		$member_name_arr_exp[$i] = explode(" - ", $member_name_arr[$i]);
 	}
+	for($i=0;$i<count($f_member_name_arr);$i++)
+	{
+		$f_member_name_arr_exp[$i] = explode(" - ", $f_member_name_arr[$i]);
+	}
 	$directory = 'images/members/';
+	$f_directory = 'images/faculty/';
 	$n = count($member_name_arr_exp);
+	$u = count($f_member_name_arr_exp);
 	//var_dump($member_name_arr_exp);die();
-		for($j=0;$j<$n;$j++)
-		{
-			if($j==$n-1){
-				$newest_num = $member_name_arr_exp[$j-1][0];
-				
-			}
+	for($j=0;$j<$n;$j++)
+	{
+		if($j==$n-1){
+			$newest_num = $member_name_arr_exp[$j-1][0];
+			
 		}
+	}
+	for($j=0;$j<$u;$j++)
+	{
+		if($j==$u-1){
+			if($j>0){
+				$f_newest_num = $f_member_name_arr_exp[$j-1][0];
+			}else{
+				$f_newest_num = $f_member_name_arr_exp[0][0];
+			}			
+		}
+	}
+	if($member_name_arr_exp[0][0]!==""){
+		print "<h4 style='color:white;' >Students</h4>";
+	}
 	for($i=0;$i<$newest_num;$i++)
 	{	$f=$i+1;
 		for($j=0;$j<count($member_name_arr);$j++)
@@ -190,6 +223,23 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 				$member_num = $member_name_arr_exp[$j][0];
 				$member_name = $member_name_arr_exp[$j][1];
 				print "<a class='mem_link' style='position:inherit;' id='$f' onclick='member_pop_up($f)' ><div style='background-image:url(images/members/$f.jpg)' class='member'><p class='names' >$member_name</p></div></a>";
+				
+			}
+		}
+				
+	}
+	if($f_member_name_arr_exp[0][0]!==""){
+		print "<h4 style='color:white;' >Faculty</h4>";
+	}
+	for($i=0;$i<$f_newest_num;$i++)
+	{	$f=$i+1;
+		for($j=0;$j<count($f_member_name_arr);$j++)
+		{
+			if(($f) == $f_member_name_arr_exp[$j][0]&&file_exists("images/faculty/$f.jpg"))
+			{
+				$f_member_num = $f_member_name_arr_exp[$j][0];
+				$f_member_name = $f_member_name_arr_exp[$j][1];
+				print "<a class='mem_link' style='position:inherit;' id='$f' onclick='faculty_pop_up($f)' ><div style='background-image:url(images/faculty/$f.jpg)' class='member'><p class='names' >$f_member_name</p></div></a>";
 				
 			}
 		}
@@ -415,43 +465,80 @@ Join Now
 </div>
 <script type="text/javascript">
 	function member_pop_up(mem_number){
+		var screen_h = document.body.clientHeight - 25;
+		document.getElementById("click_off").style.visibility = "visible";
+		document.getElementById("mem_pop_up").style.visibility = "visible";
 		document.getElementById("mem_pop_up").style.backgroundColor = "#3d4a96";
+		document.getElementById("mem_pop_up").style.overflowY = "auto";
 		document.getElementById("mem_pop_up").style.borderStyle = "inset";
 		document.getElementById("mem_pop_up").style.position = "fixed";
 		document.getElementById("mem_pop_up").style.width = "70%";
-		document.getElementById("mem_pop_up").style.minHeight = "90%";
-		document.getElementById("mem_pop_up").style.right = "5%";
+		document.getElementById("mem_pop_up").style.height = screen_h + "px";
+		document.getElementById("mem_pop_up").style.minHeight = "0px";
+		document.getElementById("mem_pop_up").style.left = "25%";
 		document.getElementById("mem_pop_up").style.top = "5px";
 		document.getElementById("mem_pop_up").style.zIndex = 9999999;
 		var xmlhttp;
-if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp = new XMLHttpRequest();
-}
-else { // code for IE6, IE5
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-}
-xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        document.getElementById("mem_pop_up").innerHTML = xmlhttp.responseText + "";
-    }
-}
-xmlhttp.open("GET", "members.php?mem=" + mem_number, true);
-xmlhttp.send();
-		 return false;
+		if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+		}
+		else { // code for IE6, IE5
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("mem_pop_up").innerHTML = xmlhttp.responseText + "";
+			}
+		}
+		xmlhttp.open("GET", "members_pop.php?mem=" + mem_number, true);
+		xmlhttp.send();
+		window.addEventListener("keyup", function(e){ if(e.keyCode == 27) closer(); }, false);
+		document.getElementById("click_off").addEventListener("click", closer);
+		return false;
+	}
+	function faculty_pop_up(mem_number){
+		var screen_h = document.body.clientHeight - 25;
+		document.getElementById("click_off").style.visibility = "visible";
+		document.getElementById("mem_pop_up").style.visibility = "visible";
+		document.getElementById("mem_pop_up").style.backgroundColor = "#3d4a96";
+		document.getElementById("mem_pop_up").style.overflowY = "auto";
+		document.getElementById("mem_pop_up").style.borderStyle = "inset";
+		document.getElementById("mem_pop_up").style.position = "fixed";
+		document.getElementById("mem_pop_up").style.width = "70%";
+		document.getElementById("mem_pop_up").style.height = screen_h + "px";
+		document.getElementById("mem_pop_up").style.minHeight = "0px";
+		document.getElementById("mem_pop_up").style.left = "25%";
+		document.getElementById("mem_pop_up").style.top = "5px";
+		document.getElementById("mem_pop_up").style.zIndex = 9999999;
+		var xmlhttp;
+		if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+		}
+		else { // code for IE6, IE5
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("mem_pop_up").innerHTML = xmlhttp.responseText + "";
+			}
+		}
+		xmlhttp.open("GET", "faculty_pop.php?mem=" + mem_number, true);
+		xmlhttp.send();
+		window.addEventListener("keyup", function(e){ if(e.keyCode == 27) closer(); }, false);
+		document.getElementById("click_off").addEventListener("click", closer);
+		return false;
 	}
 	function closer(){
-		document.getElementById("mem_pop_up").style.backgroundColor = "rgba(250,250,250,0.25)";
-		document.getElementById("mem_pop_up").style.borderStyle = "none";
+		document.getElementById("mem_pop_up").style.left = "176%";
+		document.getElementById("mem_pop_up").style.visibility = "hidden";
+		document.getElementById("click_off").style.visibility = "hidden";
 		document.getElementById("mem_pop_up").style.position = "absolute";
-		document.getElementById("mem_pop_up").style.width = "100%";
-		document.getElementById("mem_pop_up").style.minHeight = "100%";
 		document.getElementById("close_x").style.visibility = "hidden";
-		document.getElementById("mem_pop_up").style.zIndex = "inherit";
-		document.getElementById("mem_pop_up").style.right = "0px";
-		document.getElementById("mem_pop_up").style.top = "0px";
-		//document.getElementById("mem_pop_up").style.left = "0px";
 		document.getElementById("mem_pop_up").innerHTML = " <input type='button' id='close_x' class='close_x' value='X' onClick='closer()' />";
+		
 	}
+	
+
 </script>
  </body>
  </html>
