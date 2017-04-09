@@ -9,9 +9,7 @@ SESSION_START();
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Texas A &amp; M-Kingsville ACM</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" / >
-<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/main_body.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
@@ -22,22 +20,13 @@ SESSION_START();
 <body>
 <!-- Facebook plugin javascript -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
 
  <div id="search_bar" >
  <br />
- <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+ <span style="color:#3d4a96;padding-right:0px">Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
  <div id="search_bar_hidden">
  <form method="post" action="search_results.php" style="height:14px">
- <input size="22.5"style="height:16px;padding-top:2px;" name="search" placeholder="Look up a member here" type="text"/>
+ <input size="22.5"style="height:23px;padding-top:2px;" name="search" placeholder="Look up a member here" type="text"/>
  <input style="cursor:pointer;height:19px;width:19px;font-size:small;margin-bottom:1px;background-image:url('images/mag.png')" type="submit" value=""/>
  </form>
  </div>
@@ -120,24 +109,24 @@ SESSION_START();
     
  <br />
  
-	<h4 style="color:white;" >About the ACM Organization</h4>
+	<h4 style="color:white;"  class="fixup" >About the ACM Organization</h4>
 	 <br /><br /><br /><br /><br /><br /><br />
-	 <p class="info">
+	 <p style="position:relative;" >
 ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. 
 As the world’s largest computing society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, 
 and recognition of technical excellence. ACM supports the professional growth of its members by providing opportunities for life‐long learning, career development, 
 and professional networking.
 </p>
 <br/>
-<p class="info">
+<p style="position:relative;">
 Founded at the dawn of the computer age, ACM’s reach extends to every part of the globe, with more than half of its 100,000 members residing outside the U.S.  
 Its growing membership has led to Councils in Europe, India, and China, fostering networking opportunities that strengthen ties within and across countries and 
 technical communities.  Their actions enhance ACM’s ability to raise awareness of computing’s important technical, educational, and social issues around the world. 
 </p> 
 <br/>  
-<p class="info" >
-The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to give every student here a chance to explore the computer sciences in a fun and welcoming environment.  All disciplines are welcome to learn and develop their skills in web design, game design, coding, research, mentoring, and any other topic that would be of benefit to the computing world.  While membership in the larger, international ACM organization is strongly encouraged, it is not necessary to join the meetings held at TAMUK.  Click the "Join Now" tab for more information on how to become a member of the ACM-TAMUK.
-</p>
+<p style="position:relative;">
+The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to give every student here a chance to explore the Computer Sciences in a fun and welcoming environment.  All disciplines are welcome to learn and develop their skills in web design, game design, coding, research, mentoring, and any other topic that would be of benefit to the computing world.  While membership in the larger, international ACM organization is strongly encouraged, it is not necessary to join the meetings held at TAMUK.  Click the "Join Now" tab for more information on how to become a member of the ACM-TAMUK.
+</p></br></br></br></br>
 <div class="learn_more">
  <br/>
  <a href="http://www.acm.org/" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
@@ -151,16 +140,14 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.0">  
  <div class="screen" ></div>
  <div class="click_off" id="click_off" ></div>
- <div class="screen2" id="mem_pop_up" >
- 
-	 <input type="button" id="close_x" class="close_x" value="X" onClick="closer()" />
+ <div class="screen2" id="mem_pop_up" style="overflow:auto;" >
  </div>
  
  
  <br />
- <h4 style="color:white;">MEMBERS</h4>
+ <h4 style="color:white;"  class="fixup" >MEMBERS</br><p style="color:white;text-align:center;text-indent:0px;font-size:small;" >- click any photo - </p></h4>
  <br />
- <p style="color:white;text-align:center;" >- click any photo - </p>
+ 
 	<?php
 	$myfile = fopen("images/members/member_names.txt", "r") or die("Unable to open file!");
 	$myfile2 = fopen("images/faculty/faculty_names.txt", "r") or die("Unable to open file!");
@@ -212,7 +199,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 		}
 	}
 	if($member_name_arr_exp[0][0]!==""){
-		print "<h4 style='color:white;' >Students</h4>";
+		print "<h4 style='color:white;' >Students:</h4>";
 	}
 	for($i=0;$i<$newest_num;$i++)
 	{	$f=$i+1;
@@ -229,7 +216,7 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
 				
 	}
 	if($f_member_name_arr_exp[0][0]!==""){
-		print "<h4 style='color:white;' >Faculty</h4>";
+		print "<h4 style='color:white;' >Faculty:</h4>";
 	}
 	for($i=0;$i<$f_newest_num;$i++)
 	{	$f=$i+1;
@@ -274,61 +261,82 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
   <div class="screen"></div>
   
  <br />
- <h4 style="color:white;">PROJECTS</h4>
+ <h4 style="color:white;"  class="fixup" >PROJECTS</h4>
  <br /><br /><br /><br />
-
+	 <a name="site" ></a>
      <div  id = "webProject">
-     <h4>The TAMUK-ACM Announces Entry into the Outstanding Chapter Website Competition</h4>
+     <h4 style="color:white;"  class="fixup" >ACM-TAMUK Announces Entry into the Outstanding Chapter Website Contest</h4>
      <br />
      <br />
-     <p ><img src="images/placeholder.jpg" alt ="placeholder" id = "webPhoto" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
-         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
-         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
-         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
-         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
-         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
-     </p><br/>
-
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
-         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
-         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
-         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
-         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
-         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
-     </p><br/>
-
-     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus vel sem nec bibendum. Donec sit ametdolor convallis,
-         interdum elit sed, maximus mi. Suspendisse nec lectus dolor. Quisque eget ante nec leo cursus scelerisque.Nulla facilisis
-         justo felis, sed efficitur sem malesuada id. Proin ac maximus lacus, eget mollis leo. Pellentesque facilisis magnaquis nunc
-         ultricies euismod. Duis placerat, leo sit amet finibus varius, nisl tellus placerat augue, ac dignissim erat ante vitae lorem.
-         Nulla in ipsum consequat, pellentesque tortor eget, placerat purus. Donec elit neque, posuere in libero a, finibus eleifend urna.
-         In non dolor vitae nunc tempus consequat. Sed nec nisl est. Sed egestas, lectus vitae imperdiet varius, ipsum dolor dignissim ex,
-     </p><br/>
-
-    
+     <p ><a id="projects_img_link_1" style="cursor:pointer" onclick="projects_img_open(1)" ><img id="projects_img_1" src="images/misc_pics/IMG_20160922_134127.jpg" title="Click to Enlarge" class="projects_img" title="Thomas Wurdinger and Kevin Reyes" alt ="Thomas Wurdinger and Kevin Reyes" id = "webPhoto" /></a>
+	 The ACM-TAMUK is proud to bolster their web presence with this new website!  Since their inception last year (2016), the local chapter of the ACM has had an eye towards competition.  Their chairperson, Thomas Wurdinger (featured in the picture on the left), was determined to enter either a programming competition or web development competition.  With the successful fielding of two teams in the ACM-ICPC (see below), the possibility of doing both has become a reality.  ACM-TAMUK will officially enter the “Outstanding Chapter Website” contest!
+	 </p></br>
+	 <div class="quote">"Working on this project was a good experience because I became more familiar with Github, and all the different languages and tools that go into making a website besides HTML/CSS." - ACM-TAMUK Student</div>
+	 </br>
+	 <p>
+    The larger, international ACM organization holds annual competitions in several fields including “Outstanding Community Service”, “Outstanding School Service”, as well as “Outstanding Chapter Website”.  While, to be sure, the ACM-TAMUK will be entering their chapter for consideration into as many of these categories as possible, it is the “Outstanding Chapter Website” that requires quite a bit more than a simple essay.  So, the fledgling organization created a web development team and turned their efforts to completing this very site.
+	</p></br>
+	 <p>
+    The web development team consisted of Thomas Wurdinger as lead developer with Roel Garcia, Kevin Reyes, Bradley Guerrero, Joe Hernandez, Natalie Perez, Emily Saenz, Stephanie Garza, and Ross Sullivan making up his development team.  This team is proud of their accomplishment and work ethic as evidenced by the quality of this site and the fact that the deadline was met with no problems  Their hopes are high that they will bring home the prize, but accept that, to do so, they must win out over 291 ACM chapters worldwide.  That is no small task, but one they are happy to undertake.
+	</p></br>
+    <div class="quote">"I started out not knowing anything about websites, but by looking at what was already done I was able to build a good foundation for learning how to possibly create my own website in the future." -- Emily Saenz</div>
+    </br></br>
 
      </div>
 	 <hr>
-	 <a name="ICPC">
+	 <a name="ICPC" ></a>
 	 <div  id = "webProject">
-    <h4>TAMUK-ACM's Inaugural Undertaking of the International Collegiate Programming Competition</h4>
+    <h4 style="color:white;"  class="fixup" >ACM-TAMUK's Inaugural Undertaking of the International Collegiate Programming Competition</h4>
     <br />
     <br />
-    <p ><a href="https://icpc.baylor.edu/" target="_ blank"><img src="images/acmicpc_logo.png" alt ="placeholder" id = "webPhoto" /></a>As most students were mentally preparing for an upcoming break in the Fall of 2016, a few members of the Texas A&M-Kingsville (TAMUK) chapter of the Association for Computing Machinery (ACM) were preparing to compete in their very first ACM International Collegiate Programming Competition (ICPC).
+    <p ><a href="https://icpc.baylor.edu/" target="_ blank"><img src="images/acmicpc_logo.png" alt ="ACM-ICPC" title="Click Here for More Information" id = "webPhoto" /></a>
+	As most students were mentally preparing for an upcoming break in the Fall of 2016, a few members of the ACM-TAMUK were preparing to compete in their very first ACM International Collegiate Programming Competition (ICPC).
 	</p>
 	<p > 
-	Held every school year, the ACM-ICPC is an international competition sponsored by IBM where schools from all across the world meet to see who is the best at programming in the Java, PHP, C, C++, and Python coding languages.  The competition is so large and widespread, that it is held, concurrently, in many schools over several continents.  Each participating country is then broken up into several regions.  TAMUK is in the south-central region of the U.S. and the main regional competition was held at Baylor University in Waco, Texas.  The winners of these regional competitions then go on to meet at a final competition.  The location of the 2016 final competition was the Prince of Sangkla University in Phuket, Thailand.</p>
+	Held every school year, the ACM-ICPC is an international competition sponsored by IBM where schools from all across the world meet to see who is the best at programming in the Java, PHP, C, C++, and Python coding languages.  The competition is so large and widespread, that it is held concurrently in many schools over several continents.  Each participating country is then broken up into several regions.  TAMUK is in the south-central region of the U.S. and the main regional competition was held at <a class="projects_link" href="https://www.baylor.edu/" target="_blank">Baylor University</a> in Waco, Texas.  The winners of these regional competitions then go on to meet at a final competition.  The location of the 2016 final competition was the <a class="projects_link" href="http://www.en.psu.ac.th/" target="_blank">Prince of Sangkla University</a> in Phuket, Thailand.</p>
 	<p >
 	Here's a brief rundown of what happens at a programming competition.  After all the initial signing in and receiving of instructions and such, the various teams are given a packet of information containing eight real-world problems.  They are also given a look at what the correct output should look like (output is not the program itself, it is the data that is provided by a program).  These teams then have five hours to determine how to best address these problems and create programs that give the correct output using all the programming knowledge and experience they can muster.  All answers are then scored based on the accuracy of the output and the speed at which the problem was solved.</p>
 	</br>
 	<div class="quote">"Solving these problems helped me gain a better understanding of the language."<small>-Tyler Hurson</small></div>
 	</br>
 	<p >
-	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would also like to extend a special thank you to Dr. David Hicks and the entire <a class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> for their sponsorship, and Thomas Wurdinger for his help. This was the TAMUK-ACM's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the TAMUK-ACM to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
+	The two teams consisted of: Tyler Hurson, Hayden Judson, Nikolas Walker, Oscar Reyes, Bradley Guerrero, Samantha Villanueva, Emily Saenz, Stephanie Garza, and Jude Alonge.  The teams would like to thank the entire <a class="projects_link" href="http://www.tamuk.edu/engineering/" target="_blank">Frank H. Dotterweich College of Engineering</a> with special thanks to the <a class="projects_link" href="http://www.tamuk.edu/engineering/departments/eecs/index.html" target="_blank">Department of Electrical Engineering and Computer Science</a> for their sponsorship, as well as Dr. David Hicks and Thomas Wurdinger for their help. This was the ACM-TAMUK's very first attendance of such an event and while the teams will not be competing in the finals this year, many great lessons were learned and brought back to the ACM-TAMUK to be passed on to next year's competitors.  When asked to give us his account, coach Tyler Hurson had this to say:</p>
 	<p>"It was a very fun experience. Overall, everyone had a great time and I am very proud of both teams. The only boring part was the five hour car ride!  Solving these problems helped me gain a better understanding of the language(s). In addition, our experience this time around has given me some insight on how we can develop a more competitive team next year."</p></br>
 	<iframe width="280" height="157.5" src="https://www.youtube.com/embed/3rfZpKe9rdg" frameborder="0" allowfullscreen></iframe>
      </div>
-	 </br></br></br></br>
+	 <hr>
+	 <a name="site" ></a>
+     <div  id = "webProject">
+     <h4 style="color:white;"  class="fixup" >ACM-TAMUK Coaches Academy High Scool's 2017 UIL Computer Science Team to Victory!</h4>
+     <br />
+     <br />
+	<p>
+	<div class="multiple_pics" >
+	<a id="projects_img_link_2" style="cursor:pointer;" onclick="projects_img_open(2)" ><img id="projects_img_2" src="images/misc_pics/IMG_20170320_155418.jpg" title="Click to Enlarge" class="projects_img"  id = "webPhoto"  /></a>
+	</div>
+	The ACM-TAMUK organization has been training select students from <a class="projects_link" href="http://www.sgisd.net/site/Default.aspx?PageID=64" target="_blank">Academy High School</a> in the <a class="projects_link" href="http://www.sgisd.net/" target="_blank">Santa Gertrudis I.S.D.</a> to compete in the University Interscholastic League (UIL) Regional Competitions.  Ms. Susan Rutherford of <a class="projects_link" href="http://www.sgisd.net/site/Default.aspx?PageID=64" target="_blank">Academy High School</a> first contacted Dr. David Hicks at TAMUK when she was tasked with fielding a team in the UIL Computer Science competition.  At that point, <a class="projects_link" href="http://www.sgisd.net/site/Default.aspx?PageID=64" target="_blank">Academy High School</a> did not have a course devoted to the study of coding and programming languages.  The university adjacent to Academy , however, did!  With the fresh inception of the ACM-TAMUK, there was now a pool of Computer Science majors that were more than happy to devote a few hours to helping the Academy team prepare for their competition.
+	</p></br><p>
+    
+	The UIL Computer Science competition consists of an individual and team component.  There is a 45-minute written exam for both components, along with a two-hour programming contest for teams.  UIL competitions begin at the district level.  Academy has successfully advanced from district to the regional level!  Luckily, this year's district competition offered little in the way of opposition to Academy, so the team consisting of Francisco Haces-Garcia, Grayson May, Arturo Haces-Garcia, and Damacio Garza were all but assured a victory.  Academy proved that their hard work, with the help of the ACM-TAMUK, had given them the competitive edge by dominating the individual component of the competition.  
+	<ul>
+		<li>Francisco Haces-Garcia - 1st place</li>
+		<li>Grayson May - 2nd place</li>
+		<li>Arturo Haces-Garcia - 4th place</li>
+		<li>Damacio Garza - 6th place</li>
+	</ul>
+	</p><p>
+    <div class="quote">
+	"Luckily our competition only took about twenty minutes, since they are usually two hours long!" - Francisco Haces-Garcia commenting on the scarcity of AAA-district teams.
+	</div></br>
+	When asked how they felt the team had done, Ms. Rutherford replied, "Perfect!" while Francisco Haces-Garcia responded with "Great!", so it is probably safe to assume that the team is pleased with their showing at the 2017 Computer Science UIL district competition.  Jason Chen and Jose Avelar are additional team members that did not compete at the district level.
+	</p></br><h4>- click any photo -</h4></br>
+	<a id="projects_img_link_3" style="cursor:pointer;" onclick="projects_img_open_small(3)" ><img id="projects_img_small_3" src="images/misc_pics/IMG_20170320_160833.jpg" title="Click to Enlarge" class="projects_img_small" id = "webPhoto" style="padding-top:4px;" /></a>
+	<a id="projects_img_link_4" style="cursor:pointer" onclick="projects_img_open_small(4)" ><img id="projects_img_small_4" src="images/misc_pics/IMG_20170320_160844.jpg" title="Click to Enlarge" class="projects_img_small" id = "webPhoto" style="padding-top:4px;" /></a>
+	<a id="projects_img_link_6" style="cursor:pointer" onclick="projects_img_open_small(6)" ><img id="projects_img_small_6" src="images/misc_pics/IMG_6065.JPG" title="Click to Enlarge" class="projects_img_small" id = "webPhoto" style="padding-top:4px;" /></a>
+	<a id="projects_img_link_7" style="cursor:pointer" onclick="projects_img_open_small(7)" ><img id="projects_img_small_7" src="images/misc_pics/IMG_6043.JPG" title="Click to Enlarge" class="projects_img_small" id = "webPhoto" style="padding-top:4px;" /></a>
+	<a id="projects_img_link_5" style="cursor:pointer" onclick="projects_img_open_small(5)" ><img id="projects_img_small_5" src="images/misc_pics/edited_plaque.jpg" title="Click to Enlarge" class="projects_img_small" id = "webPhoto" style="padding-top:4px;" /></a></br></br>
+     </div>
+	 </br><hr></br></br></br>
  <a class="downArrow" data-slide="5" title=""></a>
 
  </div>
@@ -341,14 +349,14 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <div class="screen"></div>
 
  <br />
- <h4 style="color:white;">JOIN NOW</h4>
+ <h4 style="color:white;"  class="fixup" >JOIN NOW</h4>
  <br /><br /><br /><br /><br /><br /><br /><br />
- <p class="info">
+ <p style="position:relative;" >
  If you would like more information about joining the Texas A &amp; M Kingsville
  chapter of ACM please email us at <a class="search_links" style="color:#000;" href="mailto:webmaster@acm-tamuk.com">webmaster@acm-tamuk.com</a> or visit us in EC 112 Thursdays at 1 p.m. 
  </p>
  <br/>
- <p class="info">
+ <p style="position:relative;">
  The 'Learn More' tab at the upper right corner will take you to the ACM membership page
  where you can find additional sign up information and forms.
  </p>
@@ -358,56 +366,57 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  <a href="http://www.acm.org/membership/join-acm" target="_blank"> <span style="color:#3d4a96;">Learn More</span></a>
  <br/>
  </div> 
-  <div class="copyright" >&copy; 2016 | Texas A &amp; M University-Kingsville Association for Computing Machinery</div>
+  <div class="copyright" >&copy; <?php echo date("Y"); ?> | Texas A &amp; M University-Kingsville Association for Computing Machinery</div>
 <!--Button Overlays-->
  </div>
  <!--Beginning of Side Bar-->
  <div id="side-bar">
 <!--Home-->
  <a href="#" class="buttons" data-slide="1" title="">   
- <span><img src="images/house.png" alt=""/></span><span>Home</span>
+ <span><img src="images/house.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Home</span>
  </a>
 <!--About-->
  <a href="#" class="buttons" data-slide="2" title="">
- <span><img src="images/About.png" alt=""/></span><span>About</span>
+ <span><img src="images/About.png" alt=""/></span><span class="spain" style="text-align:inherit;" >About</span>
  </a>
 <!--Members-->
  <a href="#" class="buttons" data-slide="3" title="">
- <span><img src="images/Members.png" alt=""/></span><span>Members</span>
+ <span><img src="images/Members.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Members</span>
  </a>
 <!--Projects-->
  <a href="#" class="buttons" data-slide="4" title=""> 
- <span><img src="images/Projects.png" alt=""/></span><span>Projects</span>
+ <span><img src="images/Projects.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Projects</span>
  </a>
 <!--Join Now-->
   <a href="#" class="buttons" data-slide="5" title=""> 
-  <span><img src="images/JoinNow.png" alt=""/></span><span>Join Now</span>
+  <span><img src="images/JoinNow.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Join&nbsp;&nbsp;</span>
   </a> 
 <!--Follow Us-->
   <a class="buttons" title=""><span id="FU"data-slide="6" title="">
   <b>Follow Us</b></span></a>
   <!--Calendar-->
-  <a href="https://tamuk.collegiatelink.net/organization/acm/events" target="_blank" class="buttonsy" > 
-  <span><img src="images/c_link.png" alt=""/></span><span>Calendar of Events</span>
+  <a id="spain" onMouseOver="calendar_open()"  target="_blank" class="buttonsy" > 
+  <span><img src="images/c_link.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Events
+  </span>
   </a>
 <!--Twitter-->
 <div id="twitterFeed" style="width:100%;">
   <a href="https://twitter.com/ACM_TAMUK" class="buttons" style="height:101%" data-slide="8" title=""> 
-  <span><img src="images/Twitter.png" alt=""/></span><span>Twitter</span>
+  <span><img src="images/Twitter.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Twitter</span>
   </a> <div class="twitter-timeline">
-  <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
+  <a class="twitter-timeline" data-width="300px" data-height="400px" style="bottom:-8em;" href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
  
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8" ></script>
   </div>
   </div>
 <!--Facebook-->
-<div id="facebookFeed" style="width:100%;">
+<div id="facebookFeed" style="width:100%">
   <a href="https://www.facebook.com/acmtamuk" target="_blank" style="height:101%" class="buttons" data-slide="9" title="">
-  <span><img src="images/facebook.png" alt=""/></span><span>Facebook</span>
+  <span><img src="images/facebook.png" alt=""/></span><span class="spain" style="text-align:inherit;" >Facebook</span>
   </a>
-  <div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+  <div class="fb-page" style="border-radius:5px;" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="300px" data-height="400px" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
   <blockquote cite="https://www.facebook.com/acmtamuk" class="fb-xfbml-parse-ignore">
-  <a href="https://www.facebook.com/acmtamuk">TAMUK-ACM</a></blockquote>
+  <a href="https://www.facebook.com/acmtamuk">ACM-TAMUK</a></blockquote>
   </div></div>
  <!--Empty Space-->
   <div class="buttons" data-slide="10" title=""> 
@@ -418,35 +427,35 @@ The Texas A&M University-Kingsville (TAMUK) Chapter of the ACM was founded to gi
  </div>
  
 <div class="side_bar_overlay" >
-<a href="#" class="buttony" data-slide="1" title=""><img class="imgButton" src="images/house.png" alt=""/>
-<div class="popout1" >
-Home
+<a style="cursor:pointer;" class="buttony"  id="small_icon_1" onclick="small_tab(1)" title=""><img class="imgButton" src="images/house.png" alt=""/>
+<div class="popouts" id="small_tab_1" data-slide="1">
+&nbsp;Home
 </div>
 </a>
-<a href="#" class="buttony" data-slide="2" title=""><img class="imgButton" src="images/About.png"  alt=""/>
-<div class="popout2" >
-About Us
+<a style="cursor:pointer;" class="buttony"  id="small_icon_2" onclick="small_tab(2)" title=""><img class="imgButton" src="images/About.png"  alt=""/>
+<div class="popouts" id="small_tab_2" data-slide="2">
+&nbsp;About Us
 </div></a>
-<a href="#" class="buttony" data-slide="3" title=""><img class="imgButton" src="images/Members.png" alt=""/>
-<div class="popout3" >
-Members
+<a style="cursor:pointer;" class="buttony"  id="small_icon_3" onclick="small_tab(3)" title=""><img class="imgButton" src="images/Members.png" alt=""/>
+<div class="popouts" id="small_tab_3" data-slide="3">
+&nbsp;Members
 </div></a>
-<a href="#" class="buttony" data-slide="4" title=""><img class="imgButton" src="images/Projects.png" alt=""/>
-<div class="popout4" >
-Projects
+<a style="cursor:pointer;" class="buttony" id="small_icon_4" onclick="small_tab(4)" title=""><img class="imgButton" src="images/Projects.png" alt=""/>
+<div class="popouts" id="small_tab_4" data-slide="4">
+&nbsp;Projects
 </div></a>
-<a href="#" class="buttony" data-slide="5" title=""><img  class="imgButton" src="images/JoinNow.png" alt=""/>
-<div class="popout5" >
-Join Now
+<a style="cursor:pointer;" class="buttony" id="small_icon_5" onclick="small_tab(5)" title=""><img  class="imgButton" src="images/JoinNow.png" alt=""/>
+<div class="popouts" id="small_tab_5" data-slide="5">
+&nbsp;Join
 </div>
 </a>
 <img id="FUsmall" src="images/FU.png" alt=""/>
-<a href="https://tamuk.collegiatelink.net/organization/acm/events" target="_blank" class="buttonsy" data-slide="9" title=""><img class="imgButton" src="images/c_link.png" alt=""/></a>
+<a id="spain" onmouseover="calendar_open()" target="_blank" class="buttonsy" data-slide="9" title=""><img class="imgButton" src="images/c_link.png" alt=""/></a>
 <div id="twitterFeed" style="width:100%;">
   <a href="#" class="buttony" data-slide="7" title="" style="height:100%;" ><img class="imgButton" src="images/Twitter.png" alt=""/></a> 
  
   </a> <div class="twitter-timeline">
-  <a class="twitter-timeline" data-width="265" data-height="400"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
+  <a class="twitter-timeline"   data-width="300px" data-height="400px"  href="https://twitter.com/ACM_TAMUK">Tweets by ACM_TAMUK</a> 
  
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8" ></script>
   </div>
@@ -454,91 +463,26 @@ Join Now
 
 
 <div id="facebookFeed" style="height:10%">
-<a href="#" style="height:100%" class="buttony" data-slide="8" title="" ><img class="imgButton" src="images/facebook.png" alt=""/></a>
-<div class="fb-page" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="270px" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+<a href="#" style="height:100%;" class="buttony" data-slide="8" title="" ><img class="imgButton" src="images/facebook.png" alt=""/></a>
+<div class="fb-page" style="border-radius:5px;" data-href="https://www.facebook.com/acmtamuk" data-tabs="timeline" data-width="300px" data-height="400px" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
 
   <blockquote cite="https://www.facebook.com/acmtamuk" class="fb-xfbml-parse-ignore">
-  <a href="https://www.facebook.com/acmtamuk">TAMUK-ACM</a></blockquote>
+  <a href="https://www.facebook.com/acmtamuk">ACM-TAMUK</a></blockquote>
   </div>
   </div>
 <div class="buttony" data-slide="9" title=""><img class="imgButton" src="images/Blank.png" alt=""/></div>
 </div>
-<script type="text/javascript">
-	function member_pop_up(mem_number){
-		var screen_h = document.body.clientHeight - 25;
-		document.getElementById("click_off").style.visibility = "visible";
-		document.getElementById("mem_pop_up").style.visibility = "visible";
-		document.getElementById("mem_pop_up").style.backgroundColor = "#3d4a96";
-		document.getElementById("mem_pop_up").style.overflowY = "auto";
-		document.getElementById("mem_pop_up").style.borderStyle = "inset";
-		document.getElementById("mem_pop_up").style.position = "fixed";
-		document.getElementById("mem_pop_up").style.width = "70%";
-		document.getElementById("mem_pop_up").style.height = screen_h + "px";
-		document.getElementById("mem_pop_up").style.minHeight = "0px";
-		document.getElementById("mem_pop_up").style.left = "25%";
-		document.getElementById("mem_pop_up").style.top = "5px";
-		document.getElementById("mem_pop_up").style.zIndex = 9999999;
-		var xmlhttp;
-		if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp = new XMLHttpRequest();
-		}
-		else { // code for IE6, IE5
-			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				document.getElementById("mem_pop_up").innerHTML = xmlhttp.responseText + "";
-			}
-		}
-		xmlhttp.open("GET", "members_pop.php?mem=" + mem_number, true);
-		xmlhttp.send();
-		window.addEventListener("keyup", function(e){ if(e.keyCode == 27) closer(); }, false);
-		document.getElementById("click_off").addEventListener("click", closer);
-		return false;
-	}
-	function faculty_pop_up(mem_number){
-		var screen_h = document.body.clientHeight - 25;
-		document.getElementById("click_off").style.visibility = "visible";
-		document.getElementById("mem_pop_up").style.visibility = "visible";
-		document.getElementById("mem_pop_up").style.backgroundColor = "#3d4a96";
-		document.getElementById("mem_pop_up").style.overflowY = "auto";
-		document.getElementById("mem_pop_up").style.borderStyle = "inset";
-		document.getElementById("mem_pop_up").style.position = "fixed";
-		document.getElementById("mem_pop_up").style.width = "70%";
-		document.getElementById("mem_pop_up").style.height = screen_h + "px";
-		document.getElementById("mem_pop_up").style.minHeight = "0px";
-		document.getElementById("mem_pop_up").style.left = "25%";
-		document.getElementById("mem_pop_up").style.top = "5px";
-		document.getElementById("mem_pop_up").style.zIndex = 9999999;
-		var xmlhttp;
-		if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp = new XMLHttpRequest();
-		}
-		else { // code for IE6, IE5
-			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				document.getElementById("mem_pop_up").innerHTML = xmlhttp.responseText + "";
-			}
-		}
-		xmlhttp.open("GET", "faculty_pop.php?mem=" + mem_number, true);
-		xmlhttp.send();
-		window.addEventListener("keyup", function(e){ if(e.keyCode == 27) closer(); }, false);
-		document.getElementById("click_off").addEventListener("click", closer);
-		return false;
-	}
-	function closer(){
-		document.getElementById("mem_pop_up").style.left = "176%";
-		document.getElementById("mem_pop_up").style.visibility = "hidden";
-		document.getElementById("click_off").style.visibility = "hidden";
-		document.getElementById("mem_pop_up").style.position = "absolute";
-		document.getElementById("close_x").style.visibility = "hidden";
-		document.getElementById("mem_pop_up").innerHTML = " <input type='button' id='close_x' class='close_x' value='X' onClick='closer()' />";
-		
-	}
-	
-
+<div id="calendar_click_off" class="calendar_click_off"  ></div>
+<div class="events_pop" id="events_pop" >
+<?php include_once("test.php"); calendar("https://tamuk.collegiatelink.net/organization/acm/events");?>
+</div>
+<script type="text/javascript" >
+a = document.getElementById("spain");
+b = document.getElementById("FU");
+a.style.textDecoration = "none";
+a.style.textAlign = "inherit";
+b.style.textAlign = "-webkit-center";
+b.style.textDecoration = "none";
 </script>
  </body>
  </html>

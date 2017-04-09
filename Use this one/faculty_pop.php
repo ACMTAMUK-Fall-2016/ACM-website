@@ -24,7 +24,7 @@
  <h4 style="color:white;"><?php echo $member_name ?></h4>
  <br />
  <input type="button" id="close_x" class="close_x" value="X" style="visibility:visible;" onClick="closer()" />
- <img class="member2" style="height:160px;width:auto;" src='images/faculty/<?php echo $num ?>.jpg' alt='<?php echo $member_name ?>' title='<?php echo $member_name ?>'> 
+  <a id="members_img_link_1" style="cursor:pointer" onclick="members_img_open(1)" ><img id="members_img_1" class="member2" style="height:160px;width:auto;z-index:9999999999999999999999999999;" src='<?php if(isset($_GET['mem'])){echo "images/faculty/" . $num;}else{echo "images/faculty/" . $num;} ?>.jpg' alt='<?php echo $member_name ?>' title='Click to Enlarge'></a>
  <p style="position:relative;text-align:left;text-indent:15px;" >
  <?php
 	print $member_text1 . "<p style='position:relative;' >"; 
